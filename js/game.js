@@ -1,53 +1,46 @@
-var COMMODITIES_t = "I want my children to study with updated instructional materials including new books and softwares, and stay in air conditioned classrooms on summer days. [commodities]";
-var CONTRACT_t = "I want the school to deliver necessary services such as nursing and counseling to my children and professional training to the teachers and staff so I know my children are taken good care of. [contracts]";
-var EQUIPMENT_t = "I want the school to have well maintained buildings and equipment such as computers to enhance my child’s learning. [equipment]";
-var SALARY_t = "I want my children to receive individual attention from teachers and staff so they can benefit from personalized advices and be better prepared for colleges. [salaries]";
-var BENEFITS_t = "I want my children to study with teachers who have access to social welfare benefits and are likely to remain in school and understand my children well over the years. [benefits]";
-var TRANSPORTATION_t = "I want to make sure that my children arrive at school and return home safely. [transportation]";
-var CONTINGENCY_t =  "I want the school to have the resources to solve emergencies that might occur. [contingencies]";
-
-
- var l = [CONTRACT_t, COMMODITIES_t, CONTINGENCY_t, EQUIPMENT_t, SALARY_t, BENEFITS_t, TRANSPORTATION_t]
- var ranks = ["1","2","3","4","5","6","7"]
-
-   d3.select("body").select(".ranking").selectAll("li")
-     .data(ranks)
-     .enter()
-     .append("li")
-     .attr("class", "rankings")
-     .attr("id", function(d) {return d-1;})
-     .text(function(d) {return d;})
-
-    d3.select("body").select(".priority").selectAll("li")
-     .data(l)
-     .enter()
-     .append("li")
-     .attr("class", "sortable")
-     .attr("draggable", "true")
-     .text(function(d){return d;});
-
+$ = jQuery;
+$(document).ready(function(){
+  var SALARY_t = "I want my children to receive individual attention from teachers and staff so they can benefit from personalized advising and be better prepared for colleges."
+  function updateRankings(){
+    console.log("updateRankings");
    var counter = 0;
-   $(".sortable").each(function(index){
+   $(".priority li").each(function(index){
+     console.log(this);
       $(this).attr('id', counter);
+      var card = $(this).children(".card");
+      $(card).children(".number").html(counter+1);
       counter++;
    });
-
-  $(function(){
-    $( ".priority" ).sortable();
-    $( ".priority" ).disableSelection()
+  }
+  $(".priority").sortable({
+    forceHelperSize: true,
+    placeholder: "card-placeholder",
+    forcePlaceholderSize: true,
+    update: function(event){
+      updateRankings();
+      console.log("updated");
+    }
   });
+  // disables text selection w/in elements for easier dragging
+  $(".priority").disableSelection();
 
-  $("#rank").click(function(){ 
-    var choice = ($(".sortable")[0]).innerHTML;
+  $("#rank").click(function(){
+    var choice = ($(".description")[0]).innerHTML;
+    console.log(choice);
     if (choice == SALARY_t) {
-      document.getElementById("understanding").innerHTML = "If money equals priority, it seems that you have a pretty good sense of how the budget of your kid school is spent.";
+      $("#understanding").text("If money equals priority, it seems that you have a pretty good sense of how the budget of your kid school is spent.");
     }
     else{
-      document.getElementById("understanding").innerHTML = "If money equals priority, it seems that the budget of your children’s school is being spent with a different mindset.";
+      $("#understanding").text("If money equals priority, it seems that the budget of your children’s school is being spent with a different mindset.");
     }
-    $(".priority").hide(1500);
-    $(".ranking").hide(1500);
-    $("#direction").hide(1500);
-    $('#rank').hide();
-
+    $('html, body').animate({scrollTop: $('.budget-2015').offset().top}, 500);
+    $content = $('.game-content');
+    $content.slideToggle(500, function() {
+      $('#rank').text(function(){
+        return $content.is(":visible")? "I think I got it!" :"Play Again";
+      })
+    })
   });
+
+  updateRankings();
+});

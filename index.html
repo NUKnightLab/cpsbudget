@@ -2,29 +2,30 @@
 <html lang='en'>
     <head>
         <meta charset='utf-8'>
-        <title>Test Paragraph</title>
-        <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.11.4/themes/pepper-grinder/jquery-ui.css">
+        <title>Your CPS</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
         <script src="http://d3js.org/d3.v3.min.js"></script>
-        <script src="./js/nav.js"></script>
-        <script type='text/javascript' src='./js/text.js'></script>
-        <link rel="stylesheet" href="./style/style.css"/>
+        <script src="js/nav.js"></script>
+        <script type='text/javascript' src='js/text.js'></script>
+        <script type='text/javascript' src='js/slideScatter.js'></script>
         <link href='http://fonts.googleapis.com/css?family=Stardos+Stencil:400,700|Roboto+Slab:400,300|Roboto:400,300,300italic,500,500italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.11.4/themes/pepper-grinder/jquery-ui.css">
+        <link rel="stylesheet" href="style/style.css"/>
     </head>
 
     <!--  main page: photo, menu, name of the page, description and autocomplete  -->
 
     <body>
-        
         <!--  main page: photo, menu, name of the page, description and autocomplete  -->
-        <div class="main-image" id="section1">    
+        <div class="main-image" id="section1">
+
             <p id="credit">credit Bob Mical / Flickr</p>
 
             <div id="intro">
                 <h1>Your CPS</h1>
 
-                <p id="lede">If you have a child enrolled in the Chicago Public Schools (CPS), you have probably heard about an unprecedented financial crisis in the city's education system. This data journalism project will help you understand what is going on in Chicago’s public schools.It will also show how your child's schoolis being affected by CPS budget cuts.</p>
+                <p id="lede">If you have a child enrolled in the Chicago Public Schools (CPS), you have probably heard about an unprecedented financial crisis in the city's education system. This data journalism project will help you understand what is going on in Chicago’s public schools. It will also show how your child's schoolis being affected by CPS budget cuts.</p>
 
                 <p id="helpuser">In which school are you interested in?</p>
                 <div class="search">
@@ -40,7 +41,7 @@
                 <li><a id="nav_section2" href="#section2">YOUR SCHOOL</a></li>
                 <li><a id="nav_section3" href="#section3">2016 BUDGET</a></li>
                 <li><a id="nav_section4" href="#section4">THE CRISIS</a></li>
-                <li><a id="nav_section5" href="#section5">ABOUT</a></li>
+                <li><a id="nav_section5" href="#section5">METHODOLOGY</a></li>
                 <li><a id="nav_section6" href="#section6">CONTACT</a></li>
                 </ul>
         </div>
@@ -51,114 +52,326 @@
     <div class='budget-2015'>
         <h2>The Chicago Public Schools </br>Budget Crisis in Your School</h2>
 
-        <p>The next school year hasn't started yet, but it is already in the news. And the picture is not good: blank checking account, bills past due, a rising deficit of more than $1 billion, 1,400 positions closed in the Chicago Public Schools (CPS) system, and an imminent risk of increasing class size. </p>
+        <p>The school year of 2016 is about to start, but it is already in the news. And the picture is not good: blank checking accounts, bills overdue, a rising deficit of more than $1 billion, 1,400 jobs cut in the Chicago Public Schools (CPS) system, and an imminent risk of increasing class sizes.</p>
 
-        <p>At this point, you may be wondering what the cash-strapped CPS will decide on the budget of <span id='custom-school-name1' class='custom-school-name'></span> and how that will impact your school. How has your school been spending money in the past years and what will be different given the imminent budget cut? In order to answer your question in detail, we want you to take a moment and rank: As a parent, what are your top priorities when it comes to your children's school? </p> 
-
-        <p>At this point, you may be wondering what the cash-strapped CPS will decide on the budget of <span id='custom-school-name1' class='custom-school-name'></span> and how that will impact your school. How has your school been spending money in the past years and what will be different given the imminent budget cut? In order to answer your question in detail, we want you to take a moment and rank: As a parent, what are your top priorities when it comes to your children's school? </p>
-
-        <p class="direction">Please drag the following choices to rank the most important issue on the top. </p>
-        
-        <!--  game goes here -->
-        <!-- <div class = "sort_game">
-            <ul class = "ranking"></ul>
-            <ul class = "priority"></ul>
-        </div>
-         -->
-
-        <ul class="priority ui-sortable">
-            
-            <li class="sortable ui-sortable-handle" draggable="true" id="0"> <span class="number">1</span><span class="budget_categories">COMMODITIES</span>
-            <div class="description">I want my children to study with updated instructional materials including new books and softwares, and stay in air conditioned classrooms on summer days. </div>
-            </li>
-            
-            <li class="sortable ui-sortable-handle" draggable="true" id="0"><span class="number">2</span><span class="budget_categories">CONTRACTS</span>
-            <div class="description">I want the school to deliver necessary services such as nursing and counseling to my children and professional training to the teachers and staff so I know my children are taken good care of.</div>
-            </li>
-
-
-            <li class="sortable ui-sortable-handle" draggable="true" id="0"><span class="number">3</span><span class="budget_categories">EQUIPMENT</span>
-            <div class="description">I want the school to have well maintained buildings and equipment such as computers to enhance my child’s learning.</div>
-            </li>    
-
-            <li class="sortable ui-sortable-handle" draggable="true" id="0"><span class="number">4</span><span class="budget_categories">SALARIES</span><div class="description">I want my children to receive individual attention from teachers and staff so they can benefit from personalized advices and be better prepared for colleges.</div>
-            </li>
-
-
-            <li class="sortable ui-sortable-handle" draggable="true" id="0"><span class="number">5</span><span class="budget_categories">BENEFITS</span>
-                <div class="description">I want my children to study with teachers who have access to social welfare benefits and are likely to remain in school and understand my children well over the years.</div>
-            </li>
-
-            <li class="sortable ui-sortable-handle" draggable="true" id="0"><span class="number">6</span><span class="budget_categories">TRANSPORTATION</span>
-            <div class="description">I want to make sure that my children arrive at school and return home safely.</div>
-            </li>
-
-            <li class="sortable ui-sortable-handle" draggable="true" id="0"><span class="number">7</span><span class="budget_categories">CONTIGENCIES</span>
-            <div class="description">I want the school to have the resources to solve emergencies that might occur.</div>
-            </li>
-
-        </ul>
-
-        <button id ='rank'>I think I got it!</button>
-
-        <p><span id = "understanding"></span></p>
-
-        <p>Overall, in the past three years, the budget of <span id='custom-school-name2' class='custom-school-name'></span> has <span id = 'custom-consistency'></span>. This situation is <span id='custom-consistency-comparison'></span> what is happening with schools that serve the same grades and students with similar socioeconomic demographics.(Check our <a href='blankurl'>methodology</a> for more details)</p>
+        <p>At this point, you may be wondering what the cash-strapped CPS will decide on the budget of <span id='custom-school-name1' class='custom-formal-school-name'></span>.You might even be asking how your school has been spending money in the past years and what will be different. In order to answer your questions in detail, we want you to take a moment and rank your top priorities when it comes to your children's school.</p> 
     </div>
 
 
+        <!--  game goes here -->
+        <div class="game">
+            <div class='game-content'>
+            <div class="direction">Please drag the following choices to rank the most important issue on the top. </div>
+            <ul class="priority ui-sortable">
+                <li>
+                    <div class="card">
+                        <div class="carrets">
+                            <div class="caret-up"></div>
+                            <div class="caret-down"></div>
+                        </div>
+
+                        <span class="number">1</span><span class="budget_categories">COMMODITIES</span>
+                        <div class="description">I want my children to study with updated instructional materials including new books and softwares, and stay in air conditioned classrooms on summer days. </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="card">
+                        <div class="carrets">
+                            <div class="caret-up"></div>
+                            <div class="caret-down"></div>
+                        </div>
+
+                        <span class="number">2</span><span class="budget_categories">CONTRACTS</span>
+                        <div class="description">I want the school to deliver necessary services, such as health care and counseling to my children and professional training to the teachers and staff so I know my children are taken good care of. </div>
+
+                    </div>
+                </li>
+
+                <li>
+                <div class="card">
+                        <div class="carrets">
+                            <div class="caret-up"></div>
+                            <div class="caret-down"></div>
+                        </div>
+                    <span class="number">3</span><span class="budget_categories">EQUIPMENT</span>
+                    <div class="description"> I want the school to have well-maintained buildings and equipment such as computers to enhance my child’s learning.</div>
+
+                </div>
+                </li>
+
+                <li>
+
+                    <div class="card">
+
+                        <div class="carrets">
+                            <div class="caret-up"></div>
+                            <div class="caret-down"></div>
+                        </div>    
+                        <span class="number">4</span><span class="budget_categories">SALARIES</span>
+                        <div class="description">I want my children to receive individual attention from teachers and staff so they can benefit from personalized advising and be better prepared for colleges.</div>
+
+                    </div>
+                </li>
+
+                <li>
+                <div class="card">
+                    <div class="carrets">
+                        <div class="caret-up"></div>
+                        <div class="caret-down"></div>
+                    </div>    
+
+                    <span class="number">5</span><span class="budget_categories">BENEFITS</span>
+                    <div class="description">I want my children to study with teachers who have access to social welfare benefits and are likely to remain in school and understand my children well over the years.</div>
+                    
+                </div>
+                </li>
+
+                <li>
+                <div class="card">
+                    <div class="carrets">
+                        <div class="caret-up"></div>
+                        <div class="caret-down"></div>
+                    </div>
+
+                    <div class="content">
+                    <span class="number">6</span><span class="budget_categories">TRANSPORTATION</span>
+                    <div class="description">I want to make sure that my children arrive at school and return home safely.</div>
+                    </div>
+
+                </div>
+                </li>
+
+                <li>
+                <div class="card">
+                <div class="carrets">
+                        <div class="caret-up"></div>
+                        <div class="caret-down"></div>
+                    </div>
+                    
+                    <span class="number">7</span><span class="budget_categories">CONTIGENCIES</span>
+                    <div class="description">I want the school to have the resources to solve emergencies that might occur, such as the exacerbation of medical conditions and accidental/intentional injuries.</div>
+                </div>
+                </li>
+            </ul>
+            </div>
+            <button id='rank'>I think I got it!</button>
+        </div>
+
+<div class='budget-2015'>
+            <p><span id="understanding"></span></p>
+
+            <p>Overall, in the past three years, the budget of <span id='custom-school-name2' class='custom-school-name'></span> has been <span id = 'custom-consistency'></span>. This situation is <span id='custom-consistency-comparison'></span> what is happening with schools that serve the same grades and students with similar socioeconomic demographics. (Check our <a href='#section5'>methodology</a> for more details)</p>
+</div>
+
+    <br>
 
         <!-- Past Trend -->
+    <div class="budget-2015-analysis">
+
         <div class = 'LineGraph'>
-        <p id="lineFilter"></p>
-        <p class="direction">Pick Schools You Are Interested In</p>
-        
         <p id="lineChart"></p>
         </div>
 
-    <div class="budget_2015_analysis">
-        <p>In 2015, <span id='custom-school-name3' class='custom-school-name'></span> received a total budget of <span id='custom-total-budget'></span>. The majority of the budget, <span id='custom-salary'></span>, was spent on teachers and staff salaries. The second largest expenditure that composed <span id='custom-benefits'></span> of the budget was benefits, which include medicare for teachers and staff personnel and pensions. Those two categories are always the most expensive costs for schools.</p>
+        <a name="section2" class="section"><h3>YOUR SCHOOL BUDGET</h3></a>
+        <p>In 2015, <span id='custom-school-name3' class='custom-school-name'></span> received a total budget of <span id='custom-total-budget'></span>. The majority of the budget, <span id='custom-salary'></span>, was spent on teachers and staff salaries. The second largest expenditure that composed <span id='custom-benefits'></span> of the budget was benefits, which include medicare for teachers and staff personnel, as well as pensions. Those two categories are always the most expensive costs for schools.</p>
 
-        <p>For your school, the third area that received more investment was <span id='custom-third'></span>, a label used to determine <span id='custom-usage'></span>. If you want to know in detail about <span id='custom-school-name4' class='custom-school-name'></span>'s budget and check how close your answer is to what was adopted by the school last year, the graph below explains how much was spent on expenditures in the rest of the budget excluding salary and benefits.</p>
+        <p id = "charter-description"></p>
 
+        <p>For your school, the third area that received the most investment was <span id='custom-third'></span>, a label used to determine <span id='custom-usage'></span>. If you want to know in detail about <span id='custom-school-name4' class='custom-school-name'></span>'s budget and check how close your answer is to what was adopted by the school last year, the graph below is the most current breakdown of the expenditures of your school, excluding salary and benefits.</p>
+
+        
+        <div id="explain-pie">
+          <span id = 'explanation-charter-1'></span><span id = 'explanation-charter-2'></span><span id = 'explanation-charter-3'></span>
+            <span id='highlight-salary-benefits'></span><span id = 'explanation-district-1'></span>
+            <span id = 'explanation-district-2'></span><span id = 'explanation-district-3'></span>
+        </div>
         <div id = "pie"></div>
+        </br>
+
 
         <p>These large numbers are difficult to understand, so let's help you put them in perspective.</p>
 
-        <p>Your school may have provided <span id='custom-service-level'></span> services to students and staff than comparable schools, judging from last year’s spending on contracts. This means your children, comparing to their peers, may have spent <span id='custom-service-exp'></span> resources in services including counseling, nursing and food. This may also imply that your school provided <span id='custom-service-training'></span> professional trainings to the teachers and the staff.</p>
+        <p>Your school may have provided <span id='custom-service-level'></span> services to students and staff than comparable schools, judging from last year’s spending on contracts. This means your school may have spent <span id='custom-service-exp'></span> resources on services including counseling, nursing and food. This may also imply that your school provided <span id='custom-service-training'></span> professional trainings to the teachers and the staff.</p>
 
-        <p>If you are more concerned about having quality instructional materials for your children and a comfortable study environment, <span id='custom-logic-1'></span> your school spent <span id='custom-commodity-exp'></span> the average in commodities comparing to similar schools. <span id='custom-logic-2'></span> your school spent <span id='custom-equipment-exp'></span>  the average in equipment, the investment in school building construction and maintenance. As for transportation, which covers costs associated with transporting your children to and from school and sports events, your school spent <span id='custom-transporation-exp'></span> the average than other comparable schools.</p>
-    </div> 
-
-        
-    <a name="section2" class="section"><h3>WINTER COMES EARLY THIS YEAR</h3></a>
+        <p>If you are more concerned about having quality instructional materials for your children and a comfortable study environment, <span id='custom-logic-1'></span> your school spent <span id='custom-commodity-exp'></span> the average in commodities comparing to similar schools. <span id='custom-logic-2'></span> your school spent <span id='custom-equipment-exp'></span> the average in equipment, the investment in school building construction and maintenance. As for transportation, your school spent <span id='custom-transporation-exp'></span> the average on transporting your children to and from school and sporting events compared to similar schools.</p>
+    </div>
 
     <div class='budget-2016'>
-        <p>The 2016 fiscal year budget has not been officially released, but preliminary numbers show a total amount of $ 2.6 billion, an increase of 21.85% from last year. However, 389 out of 635 schools will see their budgets shrink in 2016. Existing charter schools (alternative and non-alternative) are seeing on average an 8% and 26% increase in their budgets, whereas other types of schools’ budget are reduced on average. Among the schools whose budgets are decreasing, 290 of them are elementary schools, 63 are high schools, and 36 are charter schools. This also includes 9 specialty schools 6 alternative schools.</p>
 
+    <a name="section3" class="section"><h3>WINTER COMES EARLY THIS YEAR</h3></a>
 
-        <p>In the case of <span id='custom-school-name5' class='custom-school-name'></span>, the total budget for the next school year is estimated to be <span id = 'custom-budget-2016'></span>, a number <span id='custom-2016-total-percent-change'></span> than last years'. For per pupil enrollment funding, your school received <span id='custom-2016-pupil'></span> than last year.
+    <p><a href="http://cps.edu/FY16Budget/Pages/FY16Budget.aspx">The 2016 fiscal year proposed budget</a>, released on August and still on the phase of adjustments, confirms that this is going to be a tougher year. "The CPS budget for the coming year includes $200 million in painful cuts we announced earlier this summer," Forrest Claypool, CEO for CPS said when announcing the proposed budget.</p>
+
+    <p>According to preliminary numbers we had access and in which we based our analysis, 389 out of 635 schools will see their core and supplemental budgets shrink in 2016. These numbers refer to classroom related expenditures. Existing charter schools (alternative and non-alternative) are seeing on average an 8 percent and 26 percent increase in their budgets, whereas other types of schools’ budgets are reduced on average.</p>
+
+    <p>In the case of <span id='custom-school-name5' class='custom-school-name'></span>, the total budget for the next school year is estimated to be <span id = 'custom-budget-2016'></span>, a number <span id='custom-2016-total-percent-change'></span> than last years'. For per pupil enrollment funding, your school received <span id='custom-2016-pupil'></span> than last year.
     </div>
+
+
 
 <!-- relations between enrollment and funding -->
     <div class = 'scatterPlot'>
-    <p id="scatterFilter">
+<!--     <p id="scatterFilter">
     <p class="direction">Pick Schools You Are Interested In:</p>
-    </p>
-    <p id='scatterPlot'></p>
+    </p> -->
+
+    <!-- section in testing -->
+            <div class = "scatter-steps">
+                <ul id = "steps">
+                <li id="step1" class="active-step">1</li><li id="step2">2</li><li id="step3">3</li><li id="step4">4</li>
+                </ul>
+            </div>
+            <!-- end of test -->
+
+        <!-- section in testing -->
+        <div class="text-blocks-scatter">
+            <p id="explanation1" class="active-explanation">YOUR SCHOOL</br></br>This graph plots the change in enrollment against the change in budget from 2015 to 2016. Did you find your school?</p>
+
+            <p id="explanation2">FUNDING MODEL</br></br>The "Student Based Budgeting" model means that schools having increases in enrollment will also see rises in budgets, whereas schools that lost students will be less funded. The ascendent straight line in the center of the graph shows this pattern.</p>
+            <p id="explanation3">LESS STUDENTS IN REGULAR SCHOOLS...</br></br>On average, each CPS school will have 6 students less in 2016 in comparison to 2015. This trend is represented at the bottom part of the graph. Regular schools are losing more students than charters.</p>
+
+            <p id="explanation4">AND MORE MONEY FOR CHARTERS</br></br>Each school will have $ 93,337 less in its budget than last year on average. The concentration of dots at the left part of the graph represents this trend. Proportionally, more charter schools received more money, as showed by the purple dots. </p>
+        </div>
+        <!-- end of testing -->
+    <p id='scatterPlot'></p>  
     </div>
 
+    <div class='capital-budget'>
+        <p><a href="http://cps.edu/fy16budget/Pages/capital.aspx">A capital budget </a>was revealed in May - the entire budget was unveiled late August. Capital expenditures are devoted to infrastructure such as the construction of playgrounds and the installation of air conditioning and internet. 
+        </p>
+        
+        <p>Suffering from unprecedented financial difficulties, CPS significantly scaled back capital expenditures in its five-year-plan (2016-2020) of proposed capital budgets. This year, the capital budget is estimated to be $160.2 million, roughly 30 percent of last year’s $510 million. Until 2019, the capital budgets are expected to decrease consistently to $83.7 million and only in 2020 will it increase again to $91.3 million.
+        </p>
+    </div>
 
-    <a name="section3" class="section"><h5>The Crisis</h5></a>
-    <a name="section4" class="section"><h6>ABOUT</h6></a>
-    <a name="section5" class="section"><h7>CONTACT</h7></a>
+    <!-- Collage -->
+
+    <div class="protest-image">
+        <div class="michelle">
+        </div>
+        <div class="overview">
+        </div>
+        <div class="quote">
+            <p>"Can you imagine a principal trying to open up a school building and trying to staff it with the highest quality people when you do not even know which positions you have available?"
+            </p>
+        </div>
+        <div class="teens">
+        </div>    
+    </div>
+
+    <div class='CTU'>
+        <h3>THE WEAKEST LINK OF THE CHAIN</h3>
+
+        <p>In addition to a reduced capital budget, schools will count on less teachers and staff personnel. On June 30, the last day of 2015 budget, principals received a letter from the Board of CPS announcing that "the cuts will eliminate the equivalent of nearly 1,400 positions, including 350 vacant positions that will not be filled." 
+        </p>
+
+        <p>The next day, hundreds of demonstrators and NGOs fighting for social justice, immigration, and education rallied in front of the James R. Thompson Center to demand the end of cutbacks on state funding to social services and education.  
+        </p>
+
+        <blockquote>"The schools that need the most seems to have the least. In upper-income neighborhood schools, parents have conditions to do fundraising and make up the government cuttings"</blockquote>
+
+        <p>"What we see with 1,400 firings is larger class sizes in every school building in our city," said <a href="https://twitter.com/msgunderson">Michelle Gunderson</a>, Vice President for elementary school for <a href="http://www.ctunet.com/">Chicago Teachers Union (CTU)</a>, who participated in the rally representing public school teachers. "I'm a first grade teacher. When I am teaching children to read, the most children I can teach at a time is 5 to be effective. Every child you add over 25 [which is 5 groups of 5] impacts the social dynamics in a classroom. I don't like the person you have to become to have order and enough quiet so everybody can learn. You have to resort back to very old fashioned teaching styles, where everybody sits on their desks, does their own work quietly," said Gunderson.
+        </p>
+
+        <p>The recently announced layoffs, added Gunderson, bring uncertainty and complexity to the yearly planning because the CPS did not specify which positions would be closed. 
+        </p>
+
+        <p>"Can you imagine a principal trying to open up a school building and trying to staff it with the highest quality people when you do not even know which positions you have available?" she said.  
+        </p>
+
+        <p>The CPS letter to principals also said that CPS will be cutting $200 million on expenditures including professional development for low performance schools, funding for newly approved charter schools, facility repair maintenance, magnet school transportation, and network offices. These cost-saving measures also include a shift in school opening times for high schools. Schools will begin classes 45 minutes later in order to decrease transportation costs - the duration of instructional time, however, will remain the same. The $200 cut was confirmed when the proposed budget was reliesed, on late August.
+        </p>
+
+        <blockquote>"The schools that need the most seems to have the least. In upper-income neighborhood schools, parents have conditions to do fundraising and make up the government cuttings"</blockquote>
+
+        <p>Even without having details on next year’s budget, the Teachers Union argues that neighborhood schools will be most impacted. Among the schools whose budgets are decreasing, 290 of them are elementary schools, 63 are high schools, and 36 are charter schools. This also includes 9 specialty schools 6 alternative schools. 
+        </p>    
+
+        <p><a href="http://ajustchicago.org/author/pavlyn/">Pavlyn Jankov</a>, a budget analyst for the Teachers Union said, "We know about the budget cuts, but we don't know how it is going to play out. If we look at previous years, we see a trend: High schools have had less investments. Simultaneously, we see more investments in charter schools. Neighborhood high schools lost enrollment, had programs cut, which made it even harder for them to attract students." 
+        </p>
+
+        <p>Chances are that the effects will be greater in crime-ridden and low-income communities. 
+        </p>
+
+        <p>"The schools that need the most seems to have the least. In upper-income neighborhood schools, parents have conditions to do fundraising and make up the government cuttings," <a href="https://twitter.com/shainds75">Sarah Hainds</a>, also budget analyst for the Teachers Union, explained.
+        </p>
+
+        <p>The difference in investment between charter, contract and regular schools is easily understood when we look at the cost per student in our analysis. In 2015, a contract school student cost $11,450, a number 8.7 percent higher than the previous year. In charter schools, this cost was $10,819, an increase of 7.6 percent. In regular schools, the yearly cost of a student in 2015 is $9,974, a mere 1 percent increase. (Important note: This comparison is general and disregards factors that directly impact each school budget, such as different student needs and socioeconomic levels. However, it still gives an accurate overall sense of the recent budget cuts).
+        </p>
+
+        <p>During the reporting process, CPS was contacted several times, but ignored our requests to comment on the subject.
+        </p>
+    </div>
+
+    <div class="history">
+        <a name="section4" class="section"><h3>HISTORY OF THE CRISIS</h3></a>
+        <p>The total CPS budget increased consistently from 2013 to 2015. Last year’s total budget is 10 percent more than what was two years ago. So if the overall budget is rising, why are we in crisis? Because, even in times of financial difficulty, the budget has a positive fluctuation due to adjustment to inflation, variation in the number of students, and pension payments from year to year. 
+        </p>
+
+        <p>The crisis is easier to understand if you look at CPS's sources of revenues. The budget is largely financed by local, state and federal tax collection. In Chicago, school revenue is directly linked to city property tax. According to an <a href="http://www.scribd.com/doc/269588560/CPS-Discussion-Document">Ernst & Young report</a> released in June at the request of CPS, “declining revenue over the period is largely attributed to the loss of Federal stimulus funding, declining State aid and the increasing use of GSA [General State Aid] for debt service." 
+        </p>
+
+        <blockquote>Even in times of financial difficulty, the budget has a positive fluctuation due to adjustment to inflation, variation in the number of students, and pension payments from year to year.</blockquote>
+
+        <p>The numbers brought by the consultants show a structural imbalance between operational expenses and the CPS’s capacity of generating revenues. In other words, CPS is spending more money than it is able to make. The total debts since 2011 has snowballed from $500 million to a formidable amount of $1.1 billion today. If CPS continues the same borrowing and spending practices, the debt is estimated to reach as high as $5.4 billion by the fiscal year of 2020, according to the Ernst & Young report. 
+        </p>
+
+        <p>Looking back to the origin of the crisis, a decade ago, CPS started to borrow money — a lot of it — to balance its debts. It has borrowed aggressively by issuing bonds, derivatives, and tapping into credit, promising to repay in the long-term to cover short-term liabilities. This year CPS board announced again to allow the school system to borrow another $1 billion. 
+        </p>
+
+        <p>Typically, lending money to the government is considered a safe investment since the risk of not being paid back tends to be low. <a href="http://www.chicagotribune.com/news/ct-cps-financial-crisis-met-20150622-story.html#page=1">Chicago Tribune reports that in April</a>, when CPS presented its financial predictions for investors, the board assured them that the schools would have $227 million in savings by the end of the fiscal year. 
+        </p>
+
+        <p>What we are seeing now, though, is a totally different picture: instead of surplus, debt. "CPS is projecting a cash shortfall of about $1.9 billion at the end of 2016 fiscal year and absent material cost deferral or third party intervention CPS is projected to run out of cash as early as this summer," warned the Ernst & Young report. This situation made <a href"http://www.chicagotribune.com/news/local/politics/ct-cps-downgrade-met-20150513-story.html">Moody's Investors Service downgrade CPS </a>bonds to junk status. 
+        </p>
+
+        <p>Besides swamping the future for cash, CPS has enjoyed in the past years what is called "pension holiday", a legislation to delay payment by allowing less contribution —— or none at all in a year —— to teachers’ pension fund. By not being obliged to adjust and increase teachers’ salaries each year, CPS agrees to contribute a higher amount of money to teachers’ pension fund compared to most of other school systems in the U.S. However, the pension holiday is over this year and CPS is demanded to pay the snowballed contribution. 
+        </p>
+
+        <blockquote>The city doesn't have a lot more tax capacity. The state doesn't have a lot of tax capacity. In the past they could deal with the crisis by putting a bandage on it.</blockquote>
+
+        <p>Among all the strategies to delay and reduce payment, the one with the most lasting impact on taxpayers was redefining the beginning of a fiscal year. In order to <a href="http://cps.edu/fy15budget/Pages/overview.aspx">inject about $654 millions </a>into the 2015 budget, CPS added two months to the past fiscal year to include July and August tax collections, expanding the 2015 fiscal year to 14 months. From this year on, the tax collection will start on September instead of June. “We recognize that this helps us balance the FY15 budget but does not generate any additional revenue. It is simply a timing change that will help us provide a bridge for the FY15 budget until the time when we achieve financial stability through pension reform,” said CPS when announcing its plan to address the budget gap.
+        </p>
+
+        <p><a href="http://www.ipr.northwestern.edu/faculty-experts/fellows/figlio.html">David Figlio</a>, director for the Institute of Police Research at Northwestern University and a former CPS parent, described the situation as "kicking a can down the road". Year after year, CPS cobbled together ways of covering expenses, but it is not possible anymore.
+        </p>
+
+        <p>"The realization of the crisis is present. Historically, this has been a problem. Now, suddenly, it's seen as a crisis. The city is doesn't have a lot more tax capacity. The state doesn't have a lot of tax capacity. In the past they could deal with the crisis by putting a bandage on it. Now, it is hard to deal with it."
+        </p>
+
+        <p>This is why, if you are a parent, you may be feeling that you have seen this play before. But next chapters will probably be an entirely new story.
+        </p>
+
+    </div>
+
+    <div class="methodology"> 
+        <a name="section5" class="section"><h3>METHODOLOGY</h3></a>
+       <p> Our project utilized mainly three datasets that contain the latest information publicly available: the report card data from 2014, the CPS budget data on individual schools from 2015, and the 2016 preliminary budgets released in July. The datasets are joined on school unit IDs. </p>
+
+        <p> We carefully chose the indicators for similar schools based on suggestions from teachers, parents, education researchers and reporters that we interviewed. Instead of using test results and school rankings, we used socio-economic status of the students including racial components, low-income rate, parental involvement rate and attendance rate to measure similarities and total enrollments and 2014 FY's total budgets to limit the search to similar-sized schools, and calculated similarities by finding the euclidean distances between schools. Simply put, it is unfair to compare schools with students who arrive every day with hungry stomachs to ones with students who do not have to worry about if there will be lunch.</p>    
+
+        <p> The project, however, suffers from several drawbacks. Joining the various dataset proved a significant challenge to us as IDs and naming conventions vary greatly from dataset to dataset. Although we were able to find a publicly available dataset that contains several identifiers and used it as a conversion table, the dataset itself, produced in 2012 as a result of a FOIA request, is outdated. Despite our best efforts to match the schools and sometimes even do so manually to maintain the most information in the most accurate way, the information is still not perfect. Additionally, we lack a way to weigh the indicators that suggest school similarities and we cannot effectively test our results within the time frame. However, we believe that it is a conceptually new way to look at the information and should incite more journalistic interests.</p> 
+
+        <p> We encourage you to utilize the joined dataset that is now available in our code to further investigate other topics related to CPS that are interesting and important.</p> 
+    </div>
+
+    <div class = 'contact-info'>   
+        <a name="section6" class="section"><h3>CONTACT</h3></a>
+        <p> This project was developed during the summer of 2015 by Lingwei Cheng and Patrícia Gomes at Knight Lab, Northwestern University, under the mentorship of Joe Germuska and Heather Billings. Our main goal was to develop a data-driven dynamic article that delivers personalized content. One reader, one specific article.This project shows that it is possible to explore existing tools to deliver news in a more innovative fashion. As an experimental project, however, it suffers from many drawbacks. Please do not hesitate in sending us <a href="http://goo.gl/forms/tcBhw2ovIg">feedback and comments</a>.</p>
+
+        <p id="person"> <b>Lingwei Cheng</b> is a graduate student at the University of Chicago Harris School of Public Policy, where she studies Computational Analysis and Public Policy. Lingwei is from Chongqing, China, the largest city in the world. Yet, she is interested in rural development and wishes one day to use technology and innovation to improve the livelihood of the disadvantaged and to empower citizens. During the summer, she’s part of an NGO of amateur hikers that hikes to collect information on children in remote mountainous regions in China. She has interned as a reporter for several city publications and as a web editor at Xinhua News Agency. She’s currently the web editor for Chicago Policy Reviews. You can contact her through <a href = "https://www.linkedin.com/in/lingweicheng">Linkedin</a> or <a href="mailto:lingweic@uchicago.edu">lingweic@uchicago.edu</a></p>
+
+        <p id="person"> <b>Patrícia Gomes</b> is an education reporter who graduated last June in Media Strategy and Leadership at Medill School of Journalism, Northwestern University. She has been working as a professional journalist since 2008 in media outlets such as Agence France Presse, Folha de S.Paulo and Porvir. Paty is from Brazil and is passionate about innovation, education, and journalism itself. You can contact her at <a href = "https://twitter.com/Paty_Gomes_"> @Paty_Gomes_</a> or <a href="mailto:patriciagomes@u.northwestern.edu">patriciagomes@u.northwestern.edu.</a></p>
+</div>
     
   
+    <script type='text/javascript' src='js/game.js'></script>
+    <script type='text/javascript' src='js/lineChart.js'></script>
+    <script type='text/javascript' src='js/pieChart.js'></script>
+    <script type='text/javascript' src='js/scatterPlot.js'></script>
 
-    <script type='text/javascript' src='./js/game.js'></script>
-    <script type='text/javascript' src='./js/lineChart.js'></script>
-    <script type='text/javascript' src='./js/pieChart.js'></script>
-    <script type='text/javascript' src='./js/scatterPlot.js'></script>
-    </body>
 
+</body>
 </html>
+

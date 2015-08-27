@@ -1,606 +1,1 @@
-Unit,Unit Name
-U20071,Columbia Explorers Academy
-U22021,Jane Addams School
-U22031,Louis J Agassiz School
-U22041,Louisa May Alcott School
-U22061,Philip D Armour School
-U22071,New Field School
-U22081,George Armstrong Elementary School
-U22091,Audubon Elementary School
-U22101,Avalon Park School
-U22131,Alice L Barnard Computer Math & Science Center
-U22141,John Barry Elementary School
-U22151,Clara W Barton School
-U22161,Perkins Bass School
-U22171,Newton Bateman Elementary School
-U22181,Lillian R Nicholson Specialty School For Science & Mathem
-U22191,George Rogers Clark Elementary School
-U22201,Jean Baptiste Beaubien School
-U22211,Jacob Beidler School
-U22221,Hiram H Belding School
-U22231,Alexander Graham Bell School
-U22241,Frank I Bennett School
-U22251,South Shore Fine Arts Academy
-U22261,James G Blaine School
-U22271,Daniel Boone School
-U22281,Scott Joplin School
-U22291,Myra Bradwell Communication Arts & Sciences Academy
-U22301,Alex Haley School
-U22311,Brentano Math & Science Academy
-U22321,Norman Bridge School
-U22331,Orville T Bright Elementary School
-U22341,Federico Garcia Lorca Elementary School
-U22351,William H Brown Elementary School
-U22361,Charles S Brownell School
-U22371,Bouchet Academy
-U22381,West Ridge Elementary School
-U22391,Lyman A Budlong School
-U22401,Luther Burbank School
-U22411,Edmund Burke Elementary School
-U22421,Augustus H Burley Elementary School
-U22441,Irene C. Hernandez Middle School for the Advancement of the Sciences
-U22451,Hughes/Davis
-U22461,Castellanos
-U22471,Jonathan Burr Elementary School
-U22481,John C Burroughs School
-U22491,Milton Brunson Specialty Elementary School
-U22501,Michael M Byrne School
-U22511,Caldwell Academy Of Mathematics Science & Technology
-U22521,Little Village Academy
-U22531,Daniel R Cameron Elementary School
-U22571,Charles Carroll School
-U22581,Dr Jorge Prieto Math and Science Academy
-U22591,Skinner North
-U22601,Rachel Carson Elementary School
-U22611,William W Carter School
-U22621,George Washington Carver Elementary
-U22641,Ira F Aldridge Elementary School
-U22651,George F Cassell School
-U22661,Horace Greeley School
-U22671,Thomas Chalmers Specialty School
-U22681,Eliza Chappell Elementary School
-U22691,Marvin Camras Elementary School
-U22701,Salmon P Chase School
-U22711,STEM Magnet Academy
-U22721,Frederic Chopin School
-U22731,Henry Clay Elementary School
-U22741,Grover Cleveland School
-U22751,Dewitt Clinton School
-U22761,Henry R Clissold School
-U22771,Edward Coles Model For Excellence School
-U22791,Christopher Columbus School
-U22801,John W Cook Elementary School
-U22811,Jordan Community School
-U22821,John C Coonley School
-U22831,Peter Cooper Dual Language Academy
-U22851,Daniel J Corkery School
-U22861,Manuel Perez Jr Elementary School
-U22871,Everett Mckinley Dirksen School
-U22881,Charles R Darwin School
-U22891,Nathan S Davis School & Annex
-U22901,Charles Gates Dawes School
-U22921,Mariano Azuela Elementary School
-U22931,Charles S Deneen School
-U22941,William E Dever School
-U22951,Dewey Academy Of Multicultural Studies
-U22981,Dodge Renaissance Academy
-U22991,James R Doolittle Jr Intermediate & Upper Cycle East
-U23001,John C Dore School
-U23011,John B Drake School
-U23021,Thomas Drummond Elementary School
-U23031,Charles W Earle School
-U23041,John F Eberhart School
-U23051,Christian Ebinger
-U23061,George W Curtis Elementary School
-U23071,Edgebrook School
-U23081,Richard Edwards School
-U23101,Edward (Duke) K Ellington School
-U23131,Esmond School
-U23141,Edward Everett Elementary School
-U23151,Laughlin Falconer School
-U23161,James B Farnsworth School
-U23201,Fernwood School
-U23211,Eugene Field School
-U23221,John Fiske School
-U23231,Telpochcalli
-U23241,Fort Dearborn Elementary School
-U23251,Joseph Kellman Corporate Community School
-U23261,Foster Park School
-U23271,Melville W Fuller
-U23281,Robert Fulton School
-U23291,Frederick Funston School
-U23301,John W Garvy School
-U23311,Joseph E Gary School
-U23321,Frank L Gillespie School
-U23341,J W Von Goethe School
-U23351,Samuel Gompers Fine Arts Option School
-U23361,Virgil Grissom School
-U23371,William C Goudy School
-U23391,Alexander Graham School
-U23401,William P Gray School
-U23411,Josefa Ortiz De Dominguez Elementary School New Gary
-U23421,Ariel Community Academy
-U23431,Nathanael Greene School
-U23441,John Gregory School
-U23451,Walter Q Gresham School
-U23461,Robert L Grimes School
-U23481,John C Haines School
-U23491,Nathan Hale School
-U23501,Alexander Hamilton School
-U23511,John H Hamline Elementary School
-U23531,Charles G Hammond School
-U23541,William F Finkl
-U23551,Sharon Christa Mcauliffe Elementary School
-U23561,Bret Harte Elementary School
-U23581,John Harvard Elementary School of Excellence
-U23591,Helge A Haugan
-U23611,Emiliano Zapata Academy
-U23621,Stephen K Hayt School
-U23631,Woodlawn Community
-U23641,Wendell Smith
-U23651,Robert Healy School
-U23671,Phoebe Apperson Hearst School
-U23681,James Hedges School Main
-U23711,Helen M Hefferan School
-U23721,Charles R Henderson School
-U23731,Patrick Henry School
-U23751,South Loop School
-U23771,Theodore Herzl School
-U23791,Agustin Lara Academy
-U23801,William G Hibbard School
-U23811,Rufus M Hitch School
-U23821,Charles N Holden School
-U23831,Oliver Wendell Holmes School
-U23851,Julia Ward Howe School
-U23871,Thomas Hoyne School
-U23881,Paul Cuffe Elementary School
-U23891,Countee Cullen School
-U23901,Charles Evans Hughes School
-U23911,Edward N Hurley School
-U23921,Friedrich L Jahn School
-U23931,Minnie Mars Jamieson School
-U23951,Edward Jenner Academy Of The Arts
-U23961,Joseph Jungman School
-U23971,Kate S Kellogg School
-U23991,Joshua D Kershaw Elementary School
-U24011,Pablo Casals
-U24021,Joyce Kilmer School
-U24051,Lazaro Cardenas School
-U24071,John H Kinzie Elementary School
-U24081,Rudyard Kipling School
-U24101,Rodolfo Lozano Bilingual & International Center
-U24131,Wendell E Green
-U24151,Leslie Lewis School
-U24191,Abraham Lincoln Elementary School
-U24201,Carl Von Linne Elementary School
-U24221,Henry D Lloyd School
-U24231,Josephine C Locke School
-U24241,Joseph Lovett School
-U24251,James Russell Lowell Elementary School
-U24281,Mary Lyon School
-U24301,James Madison School
-U24311,George Manierre School
-U24331,Horace Mann School
-U24341,Marquette Elementary
-U24361,John L Marsh School
-U24371,Michael Faraday Elementary School
-U24381,Roswell B Mason Elementary School
-U24401,Oscar F Mayer Elementary School
-U24421,George B McClellan Elementary School
-U24431,Cyrus H Mccormick School
-U24441,Emmit Louis Till Math and Science Academy
-U24451,Francis M Mckay School
-U24461,Hanson Park School
-U24471,James B Mcpherson Elementary School
-U24511,Ellen Mitchell School
-U24531,James Monroe School
-U24551,Bernhard Moos School
-U24571,Donald L Morrill Mathematics & Science Specialty School
-U24591,Mount Greenwood Elementary School
-U24601,Mount Vernon Elementary School
-U24611,Wolfgang A Mozart School
-U24621,John B Murphy School
-U24631,Ronald H Brown Community Academy
-U24641,Henry H Nash School
-U24651,Jane A Neil School
-U24661,Louis Nettelhorst School
-U24671,Florence Nightingale School
-U24681,William P Nixon School
-U24691,Alfred Nobel Elementary School
-U24711,Norwood Park Elementary School
-U24721,West Park Academy
-U24731,William B Ogden School
-U24741,Richard J Oglesby School
-U24751,Isabell C O'Keeffe School
-U24761,William J Onahan School
-U24771,Oriole Park School
-U24781,Brian Piccolo Elementary School
-U24791,James Otis School
-U24801,Luke O'Toole School
-U24811,Wells Preparatory School
-U24821,John M Palmer School
-U24841,Park Manor Elementary School
-U24851,Louis Pasteur School
-U24871,Ferdinand W Peck School
-U24881,Washington Irving School
-U24891,Helen C Peirce School Of International Studies
-U24911,William Penn School
-U24921,Harold Washington School
-U24931,Irma C Ruiz School
-U24941,Mary G Peterson School
-U24951,Marcus Moziah Garvey School
-U24961,Josiah L Pickard School
-U24971,John T Pirie Fine Arts & Academic Center
-U24981,Ambrose Plamondon School
-U24991,Laura S Ward School
-U25011,Portage Park Elementary School
-U25021,William H Prescott School
-U25031,Ernst Prussing
-U25041,George M Pullman School
-U25061,Ravenswood School
-U25071,William H Ray School
-U25091,William Claude Reavis School
-U25101,Frank W Reilly School
-U25111,Peter A Reinberg
-U25121,Paul Revere Accelerated School
-U25141,Philip Rogers School
-U25151,Cesar E Chavez Multicultural Academic Center
-U25181,Martha M Ruggles Elementary School
-U25191,William H Ryder Math/Science Specialty School
-U25211,Sauganash Elementary School
-U25231,Sidney Sawyer School
-U25241,Jonathan Y Scammon School
-U25291,Franz Peter Schubert School
-U25301,William H Seward Communication Arts Academy
-U25341,William T. Sherman Elementary School of Excellence
-U25351,Jesse Sherwood School
-U25361,James Shields Elementary School
-U25371,Beulah Shoesmith School
-U25381,John D Shoop Elementary School
-U25391,Theophilus Schmid School
-U25401,Washington D Smyser School
-U25411,John M Smyth Elementary School
-U25431,Hannah G Solomon School
-U25441,Herbert Spencer Math & Science Academy
-U25451,John Spry Community School
-U25471,Adlai E Stevenson School
-U25491,Edward F Dunne School
-U25521,Harriet Beecher Stowe School
-U25541,William K Sullivan Specialty School
-U25561,Elizabeth H Sutherland School
-U25571,George B Swift Specialty School
-U25581,Mancel Talcott School
-U25591,Douglas Taylor Elementary School
-U25601,James N Thorp Elementary School
-U25621,George W Tilton School
-U25631,Enrico Tonti School
-U25661,Mark Twain School
-U25671,Lavizzo Elementray
-U25681,Alessandro Volta School
-U25711,James Wadsworth School
-U25731,John A Walsh Elementary School
-U25751,James Ward Elementary School
-U25761,Joseph Warren Elementary School
-U25771,George Washington School
-U25781,Thomas J Waters School
-U25791,Daniel Webster School
-U25811,Daniel S Wentworth School
-U25831,John Whistler Elementary School
-U25841,Eli Whitney School
-U25861,John Greenleaf Whittier School
-U25871,A N Pritzker School
-U25881,Wildwood School
-U25911,Richard Yates Elementary School
-U25921,Ella Flagg Young School
-U25931,Ludwig Von Beethoven School
-U25941,Carrie Jacobs Bond
-U25951,Richard J Daley Academy
-U25991,Joseph Brennemann School
-U26021,Willa Cather School
-U26031,R Nathaniel Dett
-U26051,Anton Dvorak Specialty Academy
-U26061,Jackie R Robinson
-U26091,Morton School of Excellence
-U26141,John Foster Dulles Elementary School of Excellence
-U26191,Arthur R Ashe Jr Elementary School
-U26201,John T Mccutcheon School
-U26231,James Weldon Johnson Elementary School of Excellence
-U26251,Irvin C Mollison School
-U26281,Henry O Tanner School
-U26291,Adam Clayton Powell Jr Paideia Community Academy
-U26301,Ronald E Mcnair Academic Center School
-U26321,Benjamin E Mays Academy
-U26331,Richard Henry Lee School
-U26351,Genevieve Melody School
-U26381,Oliver S Westcott Elementary School
-U26391,George Leland Elementary School
-U26421,Mary E Mcdowell Elementary School
-U26431,Edward H White
-U26441,Amelia Earhart Options For Knowledge Specialty School
-U26451,Brighton Park Elementary School
-U26461,Evergreen Academy School
-U26541,Carter G Woodson South
-U26591,Medgar Evers School
-U26601,William E B Dubois School
-U26621,Charles H Wacker School
-U26631,Oscar Depriest School
-U26651,Mahalia Jackson School
-U26701,Fairfield Academy
-U26721,Sandoval Elementary School
-U26731,Barbara Vick Early Childhood & Family Center
-U26751,Johnnie Colemon School
-U26781,Talman School
-U26791,Tarkington School of Excellence
-U26821,Calmeca Academy of Fine Arts and Dual Language
-U26831,Durkin Park School
-U26841,North River Elementary School
-U26861,Uplift Community High School
-U26881,Suder Montessori Magnet School
-U26891,Velma Thomas Early Childhood Center
-U26901,Frazier Prepartatory Academy
-U26921,Disney II Magnet School
-U27091,James Shields Middle School
-U28081,Edison Park Elementary
-U28151,Orr Academy
-U29011,Thomas A Edison Regional Gifted Center
-U29021,Burnside Scholastic Academy
-U29031,Stephen Decatur Classical School
-U29041,Turner-Drew Language Academy
-U29051,Leif Ericson Scholastic Academy
-U29071,Gerald Delgado Kanoon Magnet School
-U29081,Franklin Fine Arts Center
-U29091,Matthew Gallistel Language Academy
-U29101,LaSalle Language Magnet
-U29111,A Philip Randolph Magnet School
-U29121,Frank W Gunsaulus Scholastic Academy School
-U29131,Hawthorne Scholastic Academy
-U29141,Galileo Scholastic Academy Of Math & Science
-U29151,Maria Saucedo Scholastic Academy
-U29161,Lasalle Language Academy School
-U29171,Andrew Jackson Language Academy
-U29181,James E Mcdade Classical School
-U29191,Inter-American Magnet
-U29201,Mark Sheridan Mathematics & Science Academy
-U29211,Annie Keller Regional Gifted Magnet School
-U29221,Philip Murray Language Academy
-U29231,Walter L Newberry Mathematics & Science Academy
-U29241,William Bishop Owen Scholastic Academy School
-U29251,John J. Pershing East Magnet School
-U29261,Edgar Allan Poe Classical School
-U29271,Harriet E Sayre Language Academy
-U29281,Mark Skinner School
-U29291,Stone Scholastic Academy
-U29301,Ole A Thorp Scholastic Academy
-U29311,John H Vanderpoel Magnet School
-U29321,Beasley Academic Center Magnet
-U29341,Jensen Scholastic Academy School
-U29361,Ted Lenart Regional Gifted Center
-U29371,Albert R Sabin Magnet School
-U29381,Robert A Black Magnet School
-U29391,Sir Miles Davis Magnet
-U29401,Walt Disney Magnet School
-U29411,Frazier International Magnet Elementary School
-U30011,Nancy B Jefferson Alternative School
-U30031,Walter S Christopher School
-U30041,Moses Montefiore Special School
-U30051,Daniel Carter Beard School
-U30071,Blair Early Childhood Center
-U30081,Frederick Stock School
-U30101,Ruben Salazar Bilingual Education Center School
-U30121,Wilma G Rudolph Learning Center
-U30141,Courtenay Language Arts Center
-U31041,Crown Community Academy Fine Arts Center
-U31061,Ralph H Metcalfe Community Academy Elementary School
-U31081,Stephen F Gale Community Academy
-U31101,Ninos Heroes Academic Center
-U31111,John Hay Community Academy School
-U31121,Thomas A Hendricks Community Academy
-U31141,Pilsen Community Academy
-U31151,Charles Kozminski Community Academy School
-U31161,Lawndale Community Academy School
-U31181,Francis W Parker Community Academy
-U31201,Parkside Community Academy School
-U31211,Casimir Pulaski International Academy Elementary School
-U31221,Charles Sumner Mathematics & Science Community Academy
-U31251,Thomas J Higgins Community Academy
-U31261,Jose De Diego Community Academy
-U31281,Orozco Academy
-U31301,Claremont Academy
-U32011,Albany Park Multicultural Academy Elementary School
-U32021,Lionel Hampton Fine and Performing Arts School
-U32031,National Teachers' Academy (NTA)
-U32081,Ashburn Community Area School
-U41041,Francisco I Madero Middle School
-U41051,Michelle Clark Academic Prep Magnet High School
-U41061,Frederick A Douglass Academy High School
-U41081,Thurgood Marshall Middle School
-U41091,Logandale Middle School
-U41111,Ames Middle School
-U41121,Northwest Middle
-U45211,Chicago Academy Elementary School
-U45221,Hyman G. Rickover Naval Academy
-U45231,Air Force Academy High School
-U46021,Hancock High School
-U46031,Roald Amundsen High School
-U46041,William J Bogan Computer Technical High School
-U46061,Northside College Prep
-U46101,Eric Solorio Academy High School
-U46111,Christian Fenger Academy
-U46121,Paul Robeson High School
-U46131,Edwin G Foreman High School
-U46141,Gage Park High School
-U46151,Harper High School
-U46171,Hyde Park Career Academy
-U46181,Thomas Kelly High School
-U46191,Kelvyn Park High School
-U46201,John F Kennedy High School
-U46211,Lake View High School
-U46221,Albert G Lane Technical High School
-U46241,Stephen T Mather High School
-U46251,Morgan Park High School
-U46261,Wendell Phillips Academy
-U46271,Theodore Roosevelt High School
-U46281,Carl Schurz High School
-U46291,Charles P Steinmetz Academic Centre
-U46301,Roger C Sullivan High School
-U46311,William Howard Taft High School
-U46321,Lincoln Park High School
-U46331,George Washington High School
-U46341,Gurdon S Hubbard High School
-U46361,Kenwood Academy
-U46371,KIng Selective Enrollment HS
-U46381,Carver Military High School
-U46391,George Henry Corliss High School
-U46401,Percy L Julian High School
-U46421,Benito Juarez High School
-U46431,North Grand High School
-U46461,Spry Community Links High School
-U46471,Al Raby High School
-U46481,Chicago Academy High School
-U46491,Bowen High School
-U46511,Lindblom Math and Science Academy High School
-U46521,Devry University Advantage Academy
-U46551,New Back of the Yards High School
-U46611,Sarah E. Goode STEM Academy
-U46621,VOISE Academy High School
-U46631,South Shore International College Prep High School
-U46641,Richard T. Crane (RTC) Medical Preparatory High School
-U47021,William Jones College Prep High School
-U47031,Emil G Hirsch Metropolitan High School
-U47041,John Marshall Metropolitan High School
-U47051,Gwendolyn Brooks
-U47061,Senn Metropolitan Academy Of Liberal Arts & Technology
-U47081,Frederick W Von Steuben Metropolitan Science Center
-U47091,Chicago High School For Agricultural Sciences
-U47101,Whitney M Young Magnet High School
-U49021,Northside Learning Center
-U49031,Southside Occupational Academy
-U49041,Consuella B. York Alternative HS
-U49051,Simpson Academy for Young Women
-U49081,Jacqueline B Vaughn Occupational High School
-U49091,Hope College Prep HS
-U49101,Ray Graham Training Center
-U49131,Collins Academy High School
-U49141,Austin Polytechnical Academy
-U49151,Marine Military Academy
-U49161,TEAM Englewood Community Academy
-U51021,Harlan Community Academy High School
-U51071,William H Wells Community Academy High School
-U51091,Roberto Clemente Community Academy High School
-U52011,World Language High School (at Little Village)
-U53011,Chicago Vocational Career Academy
-U53021,Dunbar Vocational Career Academy
-U53041,Charles Allen Prosser Career Academy
-U53051,Ellen H Richards Career Academy
-U53061,Neal F Simeon Vocational High School
-U53071,George Westinghouse Career Academy
-U53091,David G Farragut Career Academy High School
-U53101,Marie Sklodowska Curie Metropolitan High School
-U53111,Manley Career Community Academy High School
-U53121,Edward Tilden Career Commmunity Academy
-U55011,Phoenix Military Academy
-U55151,"Infinity Math, Science and Technology High School (at Little Village)"
-U55161,Daniel Hale Williams Prep School of Medicine
-U55171,School of Social Justice (at Little Village)
-U55181,Multicultural Arts High School (at Little Village)
-U55191,Bronzeville Scholastic Institute
-U63011,Academy for Global Citizenship
-U63021,Plato Learning Academy
-U63031,Hope Institute Learning Academy
-U63041,Kwame Nkrumah Academy
-U63051,Chicago High School for the Arts
-U63061,Community Services West Academy
-U63071,Urban Prep Charter Academy for Young Men High School - West Campus
-U63081,EPIC Academy
-U63091,Chicago Tech Academy High School
-U63131,Instituto Health Sciences Career Academy
-U63132,Instituto Justice and Leadership Academy Charter HS
-U63141,Chicago Excel/Camelot
-U66051,Perspectives Charter School - Rodney D. Joslin Campus
-U66052,Perspectives Charter School - Calumet Campus
-U66053,Perspectives Charter School- Calumet High School of Technology
-U66056,Perspectives Charter School - Math and Science Campus
-U66061,Chicago International Charter School (CICS)- Longwood Campus
-U66071,Chicago International Charter School (CICS)- Bucktown Campus
-U66072,Chicago International Charter School (CICS)- Ralph Ellison Campus
-U66074,Chicago International Charter School (CICS)-Irving Park Campus
-U66075,Chicago International Charter School - Friesse Campus
-U66076,Chicago International Charter School - Lloyd Bond Campus
-U66077,Chicago International Charter School (CICS) Larry Hawkins Campus
-U66091,North Lawndale Charter - Christiana
-U66092,North Lawndale College Preparatory Charter High School - Collins Campus
-U66111,University of Chicago Charter School - North Kenwood/Oakland (NKO) Camp
-U66112,University of Chicago Charter High School - Woodlawn Campus
-U66113,University of Chicago Charter School - Woodson South Campus
-U66121,Betty Shabazz International Charter School
-U66131,UNO Charter School - Octavio Paz Campus
-U66133,UNO Charter School - Near West Elementary Campus
-U66134,UNO Charter School - Northside Elementary Campus
-U66141,Noble Street Charter School
-U66142,Noble Street Charter High School - Pritzker College Prep Campus
-U66143,Noble Street Charter High School - Rauner College Prep Campus
-U66144,Noble Street Charter High School - Rowe Clark Campus
-U66145,Noble Street Charter High School - Golder Campus
-U66146,Noble Street Charter High School - Comer Campus
-U66147,Noble Street Charter High School - UIC Campus
-U66148,Noble Street Charter High School - Englewood Campus
-U66151,Alain Locke Charter School
-U66161,Chicago International Charter School (CICS)- Prairie Campus
-U66171,Young Women's Leadership Charter School
-U66181,Chicago International Charter School (CICS)- Washington Park Campus
-U66191,Asian Human Services - Passages Charter School
-U66211,LEARN Charter School
-U66221,Chicago International Charter School (CICS)- West Belden Campus
-U66231,Chicago International Charter School (CICS)- Basil Campus
-U66241,Chicago International Charter School (CICS)- Northtown Campus
-U66254,ASPIRA Charter - Early College Campus
-U66261,KIPP Ascend Charter School
-U66271,Namaste Charter School
-U66281,Chicago Math and Science Academy (CMSA) Charter School
-U66291,"Architecture, Construction and Engineering (ACE) Technical Charter Sch"
-U66311,Betty Shabazz International Charter School-DuSable Leadership
-U66321,University of Chicago Charter School - Donoghue Campus
-U66331,Erie Elementary Charter School
-U66341,Galapagos Charter School
-U66351,ASPIRA Charter-Haugan Middle School Campus
-U66371,Chicago International Charter School (CICS)- Avalon/South Shore Campus
-U66381,Chicago International Charter School (CICS)- Wrightwood Campus
-U66391,UNO Charter School - Rufino Tamayo Campus
-U66392,UNO Charter School - Bartolom de las Casas Campus
-U66393,UNO Charter School - Carlos Fuentes Campus
-U66394,UNO Charter School - Major Hector P. Garcia MD Campus
-U66395,UNO Charter School - SPC Daniel Zizumbo Campus
-U66396,UNO Charter School - PFC Omar E. Torres Campus
-U66397,UNO Charter School- Officer Donald Marquez Campus
-U66398,UNO Charter School - Sandra Cisneros Campus
-U66399,UNO 51st and Homan Charter Elementary School
-U66401,Betty Shabazz International Charter School-Barbara Sizemore Academy
-U66411,Austin Business and Entrepreneurship Academy
-U66421,Bronzeville Lighthouse Charter School
-U66432,Catalyst Elementary School - Circle Rock
-U66433,Catalyst - Maria Charter School
-U66441,Urban Prep Academy for Young Men Charter School-Englewood Campus
-U66442,Urban Prep Charter Academy for Young Men High School - Bronzeville Camp
-U66471,Providence Englewood Charter School - Bunche Campus
-U66481,Chicago Virtual Charter School
-U66491,Prologue Early College High School
-U66551,Amandla Charter School
-U66561,LEARN Charter School - Excel Campus
-U66562,LEARN Charter ES - Charles and Dorothy Campbell
-U66563,Learn Charter School - South Chicago Campus
-U66564,LEARN Charter School - Hunter Perkins
-U66571,Rowe Elementary School
-U66572,Noble Street Charter High School - Chicago Bulls College Prep Campus
-U66573,Noble Street Charter High School - Muchin College Prep Campus
-U66574,Noble Street Charter High School - Silver Campus
-U66575,Noble Street Charter High School - Purple Campus
-U66581,Joshua Johnston Charter School for Fine Art and Design
-U66591,The Montessori School of Englewood Charter
-U66601,UNO Charter School - UNO Elementary School Campus .
-U66641,Legal Prep Charter Academy
-U66651,Chicago Intl Charter - Chicago Quest North
-U67021,Peace and Education Coalition High School
-U67071,Legacy Charter School
-U67081,Polaris Charter Academy
-U70020,Walter Payton College Preperatory HS
-U70070,Chicago Military Academy - Bronzeville
+Unit,Unit NameU25091,William Claude Reavis SchoolU24081,Rudyard Kipling SchoolU22061,Philip D Armour SchoolU31281,Orozco AcademyU22671,Thomas Chalmers Specialty SchoolU22231,Alexander Graham Bell SchoolU25061,Ravenswood SchoolU23071,Edgebrook SchoolU23851,Julia Ward Howe SchoolU23461,Robert L Grimes SchoolU24401,Oscar F Mayer Elementary SchoolU24551,Bernhard Moos SchoolU31251,Thomas J Higgins Community AcademyU31261,Jose De Diego Community AcademyU26091,Morton School of ExcellenceU22441,Irene C. Hernandez Middle School for the Advancement of the SciencesU32011,Albany Park Multicultural Academy Elementary SchoolU41041,Francisco I Madero Middle SchoolU41081,Thurgood Marshall Middle SchoolU41121,Northwest Middle SchoolU26731,Barbara Vick Early Childhood & Family CenterU30041,Moses Montefiore Special SchoolU30051,Daniel Carter Beard SchoolU30071,Blair Early Childhood CenterU30081,Frederick Stock SchoolU30121,Wilma G Rudolph Learning CenterU49021,Northside Learning CenterU49031,Southside Occupational AcademyU49081,Jacqueline B Vaughn Occupational High SchoolU49101,Ray Graham Training CenterU26861,Uplift Community High SchoolU30011,Nancy B Jefferson Alternative SchoolU41051,Michelle Clark Academic Prep Magnet High SchoolU45221,Hyman G. Rickover Naval AcademyU45231,Air Force Academy High SchoolU46031,Roald Amundsen High SchoolU46061,Northside College PrepU46101,Eric Solorio Academy High SchoolU46121,Paul Robeson High SchoolU46131,Edwin G Foreman High SchoolU46151,Harper High SchoolU46171,Hyde Park Career AcademyU46211,Lake View High SchoolU46221,Albert G Lane Technical High SchoolU46241,Stephen T Mather High SchoolU46251,Morgan Park High SchoolU46281,Carl Schurz High SchoolU46291,Charles P Steinmetz Academic CentreU46301,Roger C Sullivan High SchoolU46331,George Washington High SchoolU46341,Gurdon S Hubbard High SchoolU46371,King Selective Enrollment High SchoolU46381,Carver Military High SchoolU46431,North Grand High SchoolU46461,Spry Community Links High SchoolU46481,Chicago Academy High SchoolU46511,Lindblom Math and Science Academy High SchoolU46551,New Back of the Yards High SchoolU46611,Sarah E. Goode STEM AcademyU46631,South Shore International College Prep High SchoolU46641,Richard T. Crane (RTC) Medical Preparatory High SchoolU47031,Emil G Hirsch Metropolitan High SchoolU47041,John Marshall Metropolitan High SchoolU47051,Gwendolyn Brooks College Prepatory AcademyU47081,Frederick W Von Steuben Metropolitan Science CenterU47091,Chicago High School For Agricultural SciencesU47101,Whitney M Young Magnet High SchoolU49041,Consuella B. York Alternative High SchoolU49051,Simpson Academy for Young WomenU49131,Collins Academy High SchoolU49141,Austin Polytechnical AcademyU49151,Marine Military AcademyU51021,Harlan Community Academy High SchoolU52011,World Language High School (at Little Village)U53021,Dunbar Vocational Career AcademyU53061,Neal F Simeon Vocational High SchoolU53071,George Westinghouse Career AcademyU53091,David G Farragut Career Academy High SchoolU53111,Manley Career Community Academy High SchoolU55161,Daniel Hale Williams Prep School of MedicineU55181,Multicultural Arts High School (at Little Village)U67021,Peace and Education Coalition High SchoolU70020,Walter Payton College Preparatory High SchoolU70070,Chicago Military Academy - BronzevilleU20071,Columbia Explorers AcademyU22071,New Field SchoolU22081,George Armstrong Elementary SchoolU22091,Audubon Elementary SchoolU22101,Avalon Park SchoolU22131,Alice L Barnard Computer Math & Science CenterU22141,John Barry Elementary SchoolU22171,Newton Bateman Elementary SchoolU22181,Lillian R Nicholson Specialty School For Science & MathU22201,Jean Baptiste Beaubien SchoolU22211,Jacob Beidler SchoolU22221,Hiram H Belding SchoolU22241,Frank I Bennett SchoolU22251,South Shore Fine Arts AcademyU22261,James G Blaine SchoolU22271,Daniel Boone SchoolU22281,Scott Joplin SchoolU22291,Myra Bradwell Communication Arts & Sciences AcademyU22301,Alex Haley SchoolU22311,Brentano Math & Science AcademyU22321,Norman Bridge SchoolU22331,Orville T Bright Elementary SchoolU22341,Federico Garcia Lorca Elementary SchoolU22351,William H Brown Elementary SchoolU22361,Charles S Brownell SchoolU22371,Bouchet AcademyU22381,West Ridge Elementary SchoolU22401,Luther Burbank SchoolU22411,Edmund Burke Elementary SchoolU22421,Augustus H Burley Elementary SchoolU22451,Langston Hughes/Davis Elementary SchoolU22461,Castellanos Elementary SchoolU22491,Milton Brunson Specialty Elementary SchoolU22511,Caldwell Academy Of Mathematics Science & TechnologyU22521,Little Village AcademyU22531,Daniel R Cameron Elementary SchoolU22571,Charles Carroll SchoolU22591,Skinner North Classical SchoolU22601,Rachel Carson Elementary SchoolU22621,George Washington Carver Elementary SchoolU22651,George F Cassell SchoolU22681,Eliza Chappell Elementary SchoolU22691,Marvin Camras Elementary SchoolU22711,STEM Magnet AcademyU22721,Frederic Chopin SchoolU22741,Grover Cleveland SchoolU22751,Dewitt Clinton SchoolU22761,Henry R Clissold SchoolU22771,Edward Coles Model For Excellence SchoolU22791,Christopher Columbus SchoolU22811,Jordan Community SchoolU22821,John C Coonley SchoolU22831,Peter Cooper Dual Language AcademyU22851,Daniel J Corkery SchoolU22861,Manuel Perez Jr Elementary SchoolU22871,Everett Mckinley Dirksen SchoolU22881,Charles R Darwin SchoolU22891,Nathan S Davis School & AnnexU22921,Mariano Azuela Elementary SchoolU22931,Charles S Deneen SchoolU22941,William E Dever SchoolU22951,Dewey Academy Of Multicultural StudiesU22981,Dodge Renaissance AcademyU22991,James R Doolittle Jr Intermediate & Upper Cycle EastU23001,John C Dore SchoolU23011,John B Drake SchoolU23021,Thomas Drummond Elementary SchoolU23041,John F Eberhart SchoolU23051,Ebinger Elementary SchoolU23081,Richard Edwards SchoolU23101,Edward (Duke) K Ellington SchoolU23131,Esmond SchoolU23141,Edward Everett Elementary SchoolU23151,Laughlin Falconer SchoolU23161,James B Farnsworth SchoolU23201,Fernwood SchoolU23211,Eugene Field SchoolU23251,Joseph Kellman Corporate Community SchoolU23271,Fuller Elementary SchoolU23281,Robert Fulton SchoolU23291,Frederick Funston SchoolU23301,John W Garvy SchoolU23321,Frank L Gillespie SchoolU23341,J W Von Goethe SchoolU23361,Virgil Grissom SchoolU23371,William C Goudy SchoolU23391,Alexander Graham SchoolU23401,William P Gray SchoolU23411,Josefa Ortiz De Dominguez Elementary SchoolU23421,Ariel Community AcademyU23431,Nathanael Greene SchoolU23441,John Gregory SchoolU23451,Walter Q Gresham SchoolU23501,Alexander Hamilton SchoolU23531,Charles G Hammond SchoolU23551,Sharon Christa Mcauliffe Elementary SchoolU23561,Bret Harte Elementary SchoolU23581,John Harvard Elementary School of ExcellenceU23591,Helge A Haugan Elementary SchoolU23611,Emiliano Zapata AcademyU23621,Stephen K Hayt SchoolU23631,Woodlawn Community SchoolU23641,Wendell Smith Elementary SchoolU23651,Robert Healy SchoolU23671,Phoebe Apperson Hearst SchoolU23681,James Hedges Elementary SchoolU23731,Patrick Henry SchoolU23751,South Loop SchoolU23791,Agustin Lara AcademyU23811,Rufus M Hitch SchoolU23831,Oliver Wendell Holmes SchoolU23871,Thomas Hoyne SchoolU23891,Countee Cullen SchoolU23901,Charles Evans Hughes SchoolU23911,Edward N Hurley SchoolU23921,Friedrich L Jahn SchoolU23951,Edward Jenner Academy Of The ArtsU23971,Kate S Kellogg SchoolU23991,Joshua D Kershaw Elementary SchoolU24011,Pablo Casals Elementary SchoolU24021,Joyce Kilmer SchoolU24051,Lazaro Cardenas SchoolU24071,John H Kinzie Elementary SchoolU24131,Wendell E Green Elementary SchoolU24201,Carl Von Linne Elementary SchoolU24221,Henry D Lloyd SchoolU24231,Josephine C Locke SchoolU24251,James Russell Lowell Elementary SchoolU24281,Mary Lyon SchoolU24301,James Madison SchoolU24311,George Manierre SchoolU24331,Horace Mann SchoolU24341,Marquette Elementary SchoolU24361,John L Marsh SchoolU24371,Michael Faraday Elementary SchoolU24381,Roswell B Mason Elementary SchoolU24421,George B McClellan Elementary SchoolU24431,Cyrus H Mccormick SchoolU24451,Francis M Mckay SchoolU24471,James B Mcpherson Elementary SchoolU24511,Ellen Mitchell SchoolU24571,Donald L Morrill Mathematics & Science Specialty SchoolU24591,Mount Greenwood Elementary SchoolU24611,Wolfgang A Mozart SchoolU24621,John B Murphy SchoolU24631,Ronald H Brown Community AcademyU24641,Henry H Nash SchoolU24661,Louis Nettelhorst SchoolU24671,Florence Nightingale SchoolU24681,William P Nixon SchoolU24691,Alfred Nobel Elementary SchoolU24711,Norwood Park Elementary SchoolU24721,West Park AcademyU24741,Richard J Oglesby SchoolU24751,Isabell C O'Keeffe SchoolU24761,William J Onahan SchoolU24781,Brian Piccolo Elementary SchoolU24791,James Otis SchoolU24801,Luke O'Toole SchoolU24821,John M Palmer SchoolU24841,Park Manor Elementary SchoolU24851,Louis Pasteur SchoolU24871,Ferdinand W Peck SchoolU24881,Washington Irving SchoolU24891,Helen C Peirce School Of International StudiesU24921,Harold Washington SchoolU24931,Irma C Ruiz SchoolU24941,Mary G Peterson SchoolU24951,Marcus Moziah Garvey SchoolU24961,Josiah L Pickard SchoolU24971,John T Pirie Fine Arts & Academic CenterU25011,Portage Park Elementary SchoolU25031,Prussing Elementary SchoolU25111,Peter A Reinberg Elementary SchoolU25121,Paul Revere Accelerated SchoolU25141,Philip Rogers SchoolU25151,Cesar E Chavez Multicultural Academic CenterU25181,Martha M Ruggles Elementary SchoolU25211,Sauganash Elementary SchoolU25231,Sidney Sawyer SchoolU25241,Jonathan Y Scammon SchoolU25351,Jesse Sherwood SchoolU25361,James Shields Elementary SchoolU25371,Beulah Shoesmith SchoolU25381,John D Shoop Elementary SchoolU25391,Theophilus Schmid SchoolU25401,Washington D Smyser SchoolU25411,John M Smyth Elementary SchoolU25431,Hannah G Solomon SchoolU25441,Herbert Spencer Math & Science AcademyU25451,John Spry Community SchoolU25541,William K Sullivan Specialty SchoolU25581,Mancel Talcott SchoolU25601,James N Thorp Elementary SchoolU25621,George W Tilton SchoolU25631,Enrico Tonti SchoolU25661,Mark Twain SchoolU25671,Lavizzo Elementray SchoolU25681,Alessandro Volta SchoolU25711,James Wadsworth SchoolU25751,James Ward Elementary SchoolU25761,Joseph Warren Elementary SchoolU25771,George Washington SchoolU25781,Thomas J Waters SchoolU25791,Daniel Webster SchoolU25811,Daniel S Wentworth SchoolU25831,John Whistler Elementary SchoolU25841,Eli Whitney SchoolU25861,John Greenleaf Whittier SchoolU25871,A N Pritzker SchoolU25881,Wildwood SchoolU25911,Richard Yates Elementary SchoolU25921,Ella Flagg Young SchoolU25931,Ludwig Von Beethoven SchoolU25951,Richard J Daley AcademyU25991,Joseph Brennemann SchoolU26021,Willa Cather SchoolU26031,Robert Nathaniel Dett Elementary SchoolU26051,Anton Dvorak Specialty AcademyU26061,Jackie R RobinsonU26191,Arthur R Ashe Jr Elementary SchoolU26231,James Weldon Johnson Elementary School of ExcellenceU26251,Irvin C Mollison SchoolU26281,Henry O Tanner SchoolU26291,Adam Clayton Powell Jr Paideia Community AcademyU26301,Ronald E Mcnair Academic Center SchoolU26331,Richard Henry Lee SchoolU26351,Genevieve Melody SchoolU26381,Oliver S Westcott Elementary SchoolU26391,George Leland Elementary SchoolU26421,Mary E Mcdowell Elementary SchoolU26431,Edward H White Career Academy U26441,Amelia Earhart Options For Knowledge Specialty SchoolU26591,Medgar Evers SchoolU26601,William E B Dubois SchoolU26631,Oscar Depriest SchoolU26651,Mahalia Jackson SchoolU26721,Sandoval Elementary SchoolU26751,Johnnie Colemon SchoolU26791,Tarkington School of ExcellenceU26821,Calmeca Academy of Fine Arts and Dual LanguageU26831,Durkin Park SchoolU26881,Suder Montessori Magnet SchoolU26891,Velma Thomas Early Childhood CenterU26921,Disney II Magnet SchoolU27091,James Shields Middle SchoolU28081,Edison Park Elementary SchoolU29011,Thomas A Edison Regional Gifted CenterU29021,Burnside Scholastic AcademyU29031,Stephen Decatur Classical SchoolU29041,Turner-Drew Language AcademyU29051,Leif Ericson Scholastic AcademyU29071,Gerald Delgado Kanoon Magnet SchoolU29081,Franklin Fine Arts CenterU29091,Matthew Gallistel Language AcademyU29101,LaSalle Language Magnet SchoolU29111,A Philip Randolph Magnet SchoolU29141,Galileo Scholastic Academy Of Math & ScienceU29161,Lasalle Language Academy SchoolU29171,Andrew Jackson Language AcademyU29191,Inter-American Magnet SchoolU29201,Mark Sheridan Mathematics & Science AcademyU29221,Philip Murray Language AcademyU29231,Walter L Newberry Mathematics & Science AcademyU29241,William Bishop Owen Scholastic Academy SchoolU29251,John J. Pershing East Magnet SchoolU29261,Edgar Allan Poe Classical SchoolU29271,Harriet E Sayre Language AcademyU29281,Mark Skinner SchoolU29291,Stone Scholastic AcademyU29301,Ole A Thorp Scholastic AcademyU29311,John H Vanderpoel Magnet SchoolU29321,Beasley Academic Center Magnet SchoolU29341,Jensen Scholastic Academy SchoolU29361,Ted Lenart Regional Gifted CenterU29371,Albert R Sabin Magnet SchoolU29381,Robert A Black Magnet SchoolU29401,Walt Disney Magnet SchoolU30031,Walter S Christopher SchoolU30101,Ruben Salazar Bilingual Education Center SchoolU30141,Courtenay Language Arts CenterU31041,Crown Community Academy Fine Arts CenterU31061,Ralph H Metcalfe Community AcademyU31101,Ninos Heroes Academic CenterU31111,John Hay Community AcademyU31121,Thomas A Hendricks Community AcademyU31141,Pilsen Community AcademyU31151,Charles Kozminski Community AcademyU31161,Lawndale Community AcademyU31181,Francis W Parker Community AcademyU31201,Parkside Community AcademyU31211,Casimir Pulaski International AcademyU31221,Charles Sumner Mathematics & Science Community AcademyU31301,Claremont AcademyU32021,Lionel Hampton Fine and Performing Arts SchoolU32081,Ashburn Community Area SchoolU45211,Chicago Academy Elementary SchoolU66074,Chicago International Charter School (CICS)-Irving Park CampusU47061,Senn Metropolitan Academy Of Liberal Arts & TechnologyU25471,Adlai E Stevenson SchoolU23311,Joseph E Gary SchoolU41111,Ames Middle SchoolU22901,Charles Gates Dawes SchoolU22581,Dr Jorge Prieto Math and Science AcademyU24531,James Monroe SchoolU41091,Logandale Middle SchoolU25521,Harriet Beecher Stowe SchoolU23491,Nathan Hale SchoolU25071,William H Ray SchoolU23511,John H Hamline Elementary SchoolU24991,Laura S Ward SchoolU24191,Abraham Lincoln Elementary SchoolU23771,Theodore Herzl SchoolU24651,Jane A Neil SchoolU23061,George W Curtis Elementary SchoolU22031,Louis J Agassiz SchoolU23481,John C Haines SchoolU25561,Elizabeth H Sutherland SchoolU23031,Charles W Earle SchoolU23541,Finkl AcademyU26451,Brighton Park Elementary SchoolU29131,Hawthorne Scholastic AcademyU46111,Christian Fenger AcademyU24911,William Penn SchoolU25731,John A Walsh Elementary SchoolU22481,John C Burroughs SchoolU23241,Fort Dearborn Elementary SchoolU23881,Paul Cuffe Elementary SchoolU24151,Leslie Lewis SchoolU26781,Talman SchoolU26841,North River Elementary SchoolU25291,Franz Peter Schubert SchoolU22611,William W Carter SchoolU41061,Frederick A Douglass Academy High SchoolU23231,Telpochcalli School U46261,Wendell Phillips AcademyU24101,Rodolfo Lozano Bilingual & International CenterU22471,Jonathan Burr Elementary SchoolU29411,Frazier International Magnet Elementary SchoolU25341,William T. Sherman Elementary School of ExcellenceU46391,George Henry Corliss High SchoolU22191,George Rogers Clark Elementary SchoolU25021,William H Prescott SchoolU32031,National Teachers' Academy (NTA)U25041,George M Pullman SchoolU22641,Ira F Aldridge Elementary SchoolU25301,William H Seward Communication Arts AcademyU46521,Devry University Advantage AcademyU66411,Austin Business and Entrepreneurship AcademyU24241,Joseph Lovett SchoolU29181,James E Mcdade Classical SchoolU55171,School of Social Justice (at Little Village)U22021,Jane Addams SchoolU25571,George B Swift Specialty SchoolU29121,Frank W Gunsaulus Scholastic Academy SchoolU25491,Edward F Dunne SchoolU22731,Henry Clay Elementary SchoolU23821,Charles N Holden SchoolU22391,Lyman A Budlong SchoolU24771,Oriole Park SchoolU23711,Helen M Hefferan SchoolU23351,Samuel Gompers Fine Arts Option School (Fomerly Jesse Owens) U22701,Salmon P Chase SchoolU25941,Carrie Jacobs BondU23931,Minnie Mars Jamieson SchoolU22041,Louisa May Alcott SchoolU46271,Theodore Roosevelt High SchoolU23721,Charles R Henderson SchoolU26201,John T Mccutcheon SchoolU23261,Foster Park SchoolU23961,Joseph Jungman SchoolU29151,Maria Saucedo Scholastic AcademyU31081,Stephen F Gale Community AcademyU25591,Douglas Taylor Elementary SchoolU29391,Sir Miles Davis Magnet SchoolU46201,John F Kennedy High SchoolU29211,Annie Keller Regional Gifted Magnet SchoolU22151,Clara W Barton SchoolU23221,John Fiske SchoolU24601,Mount Vernon Elementary SchoolU24461,Hanson Park SchoolU26541,Carter G Woodson SouthU22161,Perkins Bass SchoolU22432,Burnham/Anthony Inclusive AcademyU22501,Michael M Byrne SchoolU23801,William G Hibbard SchoolU24731,William B Ogden SchoolU26141,John Foster Dulles Elementary School of ExcellenceU26701,Fairfield AcademyU26772,Belmont-Cragin Early Childhood Demonstration CenterU63051,Chicago High School for the ArtsU63061,Community Services West AcademyU25101,Frank W Reilly SchoolU66591,The Montessori School of Englewood CharterU25191,William H Ryder Math/Science Specialty SchoolU53041,Charles Allen Prosser Career AcademyU22661,Horace Greeley SchoolU63132,Instituto Justice and Leadership Academy Charter High School (IJLA)U26321,Benjamin E Mays AcademyU24981,Ambrose Plamondon SchoolU28151,Orr AcademyU46421,Benito Juarez High SchoolU66481,Chicago Virtual Charter SchoolU63041,Kwame Nkrumah AcademyU66311,Betty Shabazz International Charter School-DuSable LeadershipU66491,Prologue Early College High SchoolU66581,Joshua Johnston Charter School for Fine Art and DesignU66641,Legal Prep Charter AcademyU66111,University of Chicago Charter School - North Kenwood/Oakland (NKO) CampU66601,UNO Charter School - Esmeralda Santiago Elementary Charter SchoolU46311,William Howard Taft High SchoolU46321,Lincoln Park High SchoolU46361,Kenwood AcademyU47021,William Jones College Prep High SchoolU51071,William H Wells Community Academy High SchoolU53101,Marie Sklodowska Curie Metropolitan High SchoolU55011,Phoenix Military AcademyU55151,"Infinity Math, Science and Technology High School (at Little Village)"U66392,UNO Charter School - Bartolom de las Casas CampusU66391,UNO Charter School - Rufino Tamayo CampusU66171,Young Women's Leadership Charter SchoolU66113,University of Chicago Charter School - Woodson South CampusU66341,Galapagos Charter SchoolU63031,Hope Institute Learning AcademyU66551,Amandla Charter SchoolU66051,Perspectives Charter School - Rodney D. Joslin CampusU66077,Chicago International Charter School (CICS) Larry Hawkins CampusU66651,Chicago Intl Charter - Chicago Quest NorthU66441,Urban Prep Academy for Young Men Charter School-Englewood CampusU66561,LEARN Charter School - Excel CampusU63091,Chicago Tech Academy High SchoolU66321,University of Chicago Charter School - Donoghue CampusU66331,Erie Elementary Charter SchoolU63141,Excel Academy Chicago - Camelot SchoolsU66076,Chicago International Charter School - Lloyd Bond CampusU66442,Urban Prep Charter Academy for Young Men High School - Bronzeville CampU66271,Namaste Charter SchoolU66564,LEARN Charter School - Hunter PerkinsU66092,North Lawndale College Preparatory Charter High School - Collins CampusU49091,Hope College Prep High SchoolU67081,Polaris Charter AcademyU66563,LEARN Charter School - South Chicago CampusU26901,Frazier Prepartatory AcademyU63071,Urban Prep Charter Academy for Young Men High School - West CampusU66161,Chicago International Charter School (CICS)- Prairie CampusU66131,UNO Charter School - Octavio Paz CampusU66371,Chicago International Charter School (CICS)- Avalon/South Shore CampusU66471,Providence Englewood Charter School - Bunche CampusU66072,Chicago International Charter School (CICS)- Ralph Ellison CampusU67071,Legacy Charter SchoolU66562,LEARN Charter Elementary School - Charles and Dorothy CampbellU66053,Perspectives Charter School- Calumet High School of TechnologyU66421,Bronzeville Lighthouse Charter SchoolU66575,Noble Street Charter High School - DRW Trading College PrepU66151,Alain Locke Charter SchoolU66574,Noble Street Charter High School - Hansberry High SchoolU66181,Chicago International Charter School (CICS)- Washington Park CampusU66291,"Architecture, Construction and Engineering (ACE) Technical Charter School"U63021,Plato Learning AcademyU63081,EPIC AcademyU66221,Chicago International Charter School (CICS)- West Belden CampusU66432,Catalyst Elementary School - Circle RockU66254,ASPIRA Charter - Early College CampusU66056,Perspectives Charter School - Math and Science CampusU66141,Noble Street Charter SchoolU66398,UNO Charter School - Sandra Cisneros CampusU66393,UNO Charter School - Carlos Fuentes CampusU66571,Rowe Elementary SchoolU66351,ASPIRA Charter-Haugan Middle School CampusU66112,University of Chicago Charter High School - Woodlawn CampusU66145,Noble Street Charter High School - Golder CampusU66143,Noble Street Charter High School - Rauner College Prep CampusU46141,Gage Park High SchoolU66133,UNO Charter School - Near West Elementary CampusU66399,UNO 51st and Homan Charter Elementary SchoolU66397,UNO Charter School- Officer Donald Marquez CampusU66401,Betty Shabazz International Charter School-Barbara Sizemore AcademyU66075,Chicago International Charter School - Friesse CampusU66281,Chicago Math and Science Academy (CMSA) Charter SchoolU66211,LEARN Charter School - Butler U66071,Chicago International Charter School (CICS)- Bucktown CampusU66395,UNO Charter School - SPC Daniel Zizumbo CampusU66396,UNO Charter School - PFC Omar E. Torres CampusU66394,UNO Charter School - Major Hector P. Garcia MD CampusU66144,Noble Street Charter High School - Rowe Clark CampusU66134,UNO Charter School - Northside Elementary CampusU66381,Chicago International Charter School (CICS)- Wrightwood CampusU66241,Chicago International Charter School (CICS)- Northtown CampusU66573,Noble Street Charter High School - Muchin College Prep CampusU66261,KIPP Ascend Charter SchoolU66231,Chicago International Charter School (CICS)- Basil CampusU66148,Noble Street Charter High School - Johnson College PrepU63131,Instituto Health Sciences Career AcademyU66147,Noble Street Charter High School - UIC CampusU66142,Noble Street Charter High School - Pritzker College Prep CampusU66433,Catalyst - Maria Charter SchoolU46621,VOISE Academy High SchoolU66146,Noble Street Charter High School - Comer CampusU66572,Noble Street Charter High School - Chicago Bulls College Prep CampusU66061,Chicago International Charter School (CICS)- Longwood CampusU49161,TEAM Englewood Community AcademyU22801,John W Cook Elementary SchoolU63011,Academy for Global CitizenshipU53121,Edward Tilden Career Commmunity AcademyU53051,Ellen H Richards Career AcademyU46401,Percy L Julian High SchoolU26461,Evergreen AcademyU46021,Hancock High SchoolU66091,North Lawndale Charter - ChristianaU24811,Wells Preparatory SchoolU26621,Charles H Wacker SchoolU24441,Emmit Louis Till Math and Science AcademyU46181,Thomas Kelly High SchoolU66121,Betty Shabazz International Charter SchoolU66191,Asian Human Services - Passages Charter SchoolU53011,Chicago Vocational Career AcademyU46491,Bowen High SchoolU46041,William J Bogan Computer Technical High SchoolU46471,Al Raby High SchoolU46191,Kelvyn Park High SchoolU51091,Roberto Clemente Community Academy High SchoolU55191,Bronzeville Scholastic Institute

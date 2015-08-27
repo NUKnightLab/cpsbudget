@@ -1,4 +1,5 @@
-function draw_line_chart(school_name,similars,dataset){
+function draw_line_chart(school_short,school_name,similars,dataset){
+  console.log("LineCHART!")
 var margin = {top: 20, right: 100, bottom: 30, left: 80},
     width = 900 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
@@ -29,8 +30,8 @@ var line = d3.svg.line()
     .y(function(d) { return y(d.budget); });
 
 
-var dropDown = d3.select("#lineFilter").append("select")
-                  .attr("name", "school-list");
+// var dropDown = d3.select("#lineFilter").append("select")
+//                   .attr("name", "school-list");
 
 
 var svg = d3.select("body").select('#lineChart').append("svg")
@@ -41,23 +42,23 @@ var svg = d3.select("body").select('#lineChart').append("svg")
 
 //crudly drawing up the legend
 svg.append("text")
-   .attr("x", width-50)
+   .attr("x", width-30)
    .attr("y", height-450)
    .attr("class","legend")
-   .text("your school");
+   .text(school_short);
 svg.append("text")
-   .attr("x",width-50)
+   .attr("x",width-30)
    .attr("y", height-430)
    .attr("class","legend")
    .text("similar schools");
 svg.append('rect')
-  .attr("x",width-70)
+  .attr("x",width-50)
   .attr("y",height-460)
   .attr("width",10)
   .attr("height",10)
   .style("fill", "#c1272d");
 svg.append('rect')
-  .attr("x",width-70)
+  .attr("x",width-50)
   .attr("y",height-440)
   .attr("width",10)
   .attr("height",10)
@@ -116,31 +117,27 @@ d3.csv("./js/data/yearlyBudget.csv", function(error, data) {
       .enter().append("g")
       .attr("class", "school");
 
-  schools = schools.sort(function(a, b) { return d3.ascending(a["name"], b["name"]);})
-  //console.log(schools)
-  //options
-  var options = dropDown.selectAll("option")
-             .data([{"name":"Your school and similar schools"}].concat(schools))
-             .enter()
-             .append("option");
-
-  options.text(function (d) { return d["name"]; })
-         .attr("value", function (d) { return d["name"]; });
-
 //draw default lines
   sch.append("path")
+      // .attr("class", function(d){
+      //   if ( (d["Unit Name"] == school_name)||(similars.indexOf(d["Unit Name"])!= -1) ) {
+      //     return "front_line";
+      //     }
+      //   else {
+      //     return "line";
+      //   }
+      //})
       .attr("class", "line")
       .attr("d", function(d) { return line(d.values); })
-      .style("stroke", function(d) {         
+      .style("stroke", function(d) {
           if (d.name == school_name){
             return "#c1272d";
           }
           else if (similars.indexOf(d.name)!= -1){
-          console.log("similar school found!")
           return "#4879CE";
           }
       })
-      .style("stroke-width", function(d) {         
+      .style("stroke-width", function(d) {
         if ((d.name == school_name) || (similars.indexOf(d.name)!= -1)){
           return "3px";
         }
@@ -148,7 +145,7 @@ d3.csv("./js/data/yearlyBudget.csv", function(error, data) {
           return "1.5px";
         }
       })
-      .style("opacity", function(d) {         
+      .style("opacity", function(d) {
         if ((d.name == school_name) || (similars.indexOf(d.name)!= -1)){
           return "1";
         }
@@ -157,103 +154,46 @@ d3.csv("./js/data/yearlyBudget.csv", function(error, data) {
         }
       });
 
-//  //put dots on the lines
-
-// svg.selectAll(".line")
-//     .data(schools)
-//     .enter()
-//     .append("circle")
-//     .attr("cx", function(d, i) {return d.date})
-//     .attr("cy", function(d, i){return d.value}) 
-//     .attr("r", 2);
-//     .attr("stroke", "black")
-
 //prepare tooltips
-var tooltip = d3.select("body").select("#lineChart").append("div")
-    .attr("class", "tooltip");
+var tooltip = d3.select("body")
+                .select("#lineChart")
+                .append("div")
+                .attr("class", "tooltip");
 
 //formating lines
   sch.append("text")
       .datum(function(d) { return {name: d.name, value: d.values[d.values.length - 1]}; })
       .attr("transform", function(d) { return "translate(" + x(d.value.date) + "," + y(d.value.budget) + ")"; })
-      .attr("x", 3) 
+      .attr("x", 3)
       .attr("dy", ".35em");
 
 
   svg.selectAll(".line").on("mouseover", function(d) {
-    
-    console.log("mouseOVER!")
-        d3.select(this).attr("stroke-width", "3px").style("stroke", "#c1272d").style("opacity","1").style("fill","none");
-        tooltip.style("visibility","visible")
-             .transition()
-             .duration(200)
-             .style("opacity", .9);
-        tooltip.html(d["name"])
-             .style("left", (d3.event.pageX + 5) + "px")
-             .style("top", (d3.event.pageY - 28) + "px");
-    })
-  .on("mouseout", function(d) {
-        d3.select(this).attr("stroke-width", "1.5px").style("stroke", "#59606A").style("opacity","0.1").style("fill","none");
-        tooltip.transition()
-             .duration(500)
-             .style("opacity", 0);
-    });
-
-    dropDown.on("change", function() {
-      var selected = d3.event.target.value;
-      var comparison = 0;
-
-
-      svg.selectAll(".line")
-         .style("opacity", 0.1)
-         .style("stroke", "#A6A6A6")
-         .style("stroke-width", "1.5px")
-         .style("fill","none");
-
-      if (selected == 'Your school and similar schools'){
-        selected = school_name;
-        comparison = 1;
-      }
-
-      if (comparison == 1) {
-        svg.selectAll(".line")
-           .filter(function(d) { return (similars.indexOf(d["name"])!= -1); })
-           .style("stroke", "#4879CE")
-           .style("opacity", 1)
-           .style("stroke-width", "3px");
-        svg.selectAll(".line")
-            .filter(function(d) {return selected == d["name"]; })
-            .style("stroke", "#c1272d")
-            .style("opacity", 1)
-           .style("stroke-width", "3px");
-      } else {
-        var line_similar_schools;
-        var line_school;
-        for (var i = 0; i < dataset.length; i++) {
-          if (dataset[i]["Unit Name"] == selected) {
-            line_school = dataset[i];
-            line_similar_schools = line_school["SimilarNames"]; 
-            line_similar_schools = line_similar_schools.trim().split(",");
-            for (var j = 0; j < line_similar_schools.length; j ++){
-              line_similar_schools[j] = line_similar_schools[j].trim().replace("'","").replace("[","").replace("]","").replace("'","");
-            }
-          }
-        }
-        svg.selectAll(".line")
-          .filter(function(d) {
-            return (line_similar_schools.indexOf(d["name"]) != -1);
-          })
-          .transition()
-          .style("stroke", "#4879CE")
-          .style("opacity", 1)
-          .style("stroke-width", "3px");
-      svg.selectAll(".line")
-          .filter(function(d) {return selected == d["name"];})
-          .style("stroke", "#c1272d")
-          .style("opacity", 1)
-          .style("stroke-width", "3px");
-    }    
-  });
+        tooltip.style("background-color", function() {
+              if (d.name == school_name){
+                return "#c1272d";
+              } else if (similars.indexOf(d.name)!= -1){
+              console.log("similar school found!")
+              return "#4879CE";
+              } else {
+                return "#7e7e7e";
+              }
+            })
+           .style("visibility","visible")
+           .transition()
+           .duration(200)
+           .style("opacity", .9);
+          tooltip.html(d["name"])
+               .style("left", (d3.event.pageX + 5) + "px")
+               .style("top", (d3.event.pageY - 28) + "px");
+      })
+    .on("mouseout", function(d) {
+          tooltip.transition()
+               .duration(500)
+               .style("opacity", 0);
+      });
 })
 }
+
+
 
