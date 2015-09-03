@@ -7,6 +7,7 @@
         <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
         <script src="http://d3js.org/d3.v3.min.js"></script>
         <script src="js/nav.js"></script>
+        <script src="js/share.js"></script>
         <script type='text/javascript' src='js/text.js'></script>
         <script type='text/javascript' src='js/slideScatter.js'></script>
         <link href='http://fonts.googleapis.com/css?family=Stardos+Stencil:400,700|Roboto+Slab:400,300|Roboto:400,300,300italic,500,500italic' rel='stylesheet' type='text/css'>
@@ -27,10 +28,12 @@
 
                 <p id="lede">If you have a child enrolled in the Chicago Public Schools (CPS), you have probably heard about an unprecedented financial crisis in the city's education system. This data journalism project will help you understand what is going on in Chicago’s public schools. It will also show how your child's schoolis being affected by CPS budget cuts.</p>
 
-                <p id="helpuser">In which school are you interested in?</p>
+                <p id="lede">Which school are you interested in?</p>
                 <div class="search">
-                   <input type="text" id="user_school" placeholder="Type the name of your school here">
+                   <input type="text" id="user_school" placeholder="Type at least 4 characters here...">
                 </div>
+
+                <p id="helpuser"> If you don't want to choose a school, our text will present numbers of a typical CPS school. </p>
             </div>
         </div>
 <!--     navigation bar -->
@@ -45,6 +48,16 @@
                 <li><a id="nav_section6" href="#section6">CONTACT</a></li>
                 </ul>
         </div>
+
+
+<div class="share-wrapper">
+<ul class="share-buttons">
+<li><a href="https://www.facebook.com/sharer/sharer.php?u=&t=" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><img src="http://i77.photobucket.com/albums/j52/Cheng_Lingwei/facebook_zpsarojscks.png" border="0" alt=" photo facebook_zpsarojscks.png"/></a></li>
+<li><a href="https://twitter.com/intent/tweet?source=&text=:%20" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img src="http://i77.photobucket.com/albums/j52/Cheng_Lingwei/twitter_zpsrowge29p.png" border="0" alt=" photo twitter_zpsrowge29p.png"/></a></li>
+<li><a href="https://plus.google.com/share?url=" target="_blank" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url=' + encodeURIComponent(document.URL)); return false;"><img src="http://i77.photobucket.com/albums/j52/Cheng_Lingwei/cc18bbb3-040d-4527-83b5-59fb7c2919b2_zps4wtnaq4a.png" border="0" alt=" photo cc18bbb3-040d-4527-83b5-59fb7c2919b2_zps4wtnaq4a.png"/></a></li>
+<li><a href="mailto:?subject=&body=:%20" target="_blank" title="Email" onclick="window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' +  encodeURIComponent(document.URL)); return false;"><img src="http://i77.photobucket.com/albums/j52/Cheng_Lingwei/email_zpswvpulmqh.png" border="0" alt=" photo email_zpswvpulmqh.png"/></a></li>
+</ul>
+</div>
 
 
 
@@ -169,26 +182,25 @@
         <!-- Past Trend -->
     <div class="budget-2015-analysis">
 
-        <div class = 'LineGraph'>
+        <div class='LineGraph'>
         <p id="lineChart"></p>
         </div>
 
         <a name="section2" class="section"><h3>YOUR SCHOOL BUDGET</h3></a>
         <p>In 2015, <span id='custom-school-name3' class='custom-school-name'></span> received a total budget of <span id='custom-total-budget'></span>. The majority of the budget, <span id='custom-salary'></span>, was spent on teachers and staff salaries. The second largest expenditure that composed <span id='custom-benefits'></span> of the budget was benefits, which include medicare for teachers and staff personnel, as well as pensions. Those two categories are always the most expensive costs for schools.</p>
 
-        <p id = "charter-description"></p>
+        <p id="charter-description"></p>
 
         <p>For your school, the third area that received the most investment was <span id='custom-third'></span>, a label used to determine <span id='custom-usage'></span>. If you want to know in detail about <span id='custom-school-name4' class='custom-school-name'></span>'s budget and check how close your answer is to what was adopted by the school last year, the graph below is the most current breakdown of the expenditures of your school, excluding salary and benefits.</p>
 
-        
-        <div id="explain-pie">
-          <span id = 'explanation-charter-1'></span><span id = 'explanation-charter-2'></span><span id = 'explanation-charter-3'></span>
-            <span id='highlight-salary-benefits'></span><span id = 'explanation-district-1'></span>
-            <span id = 'explanation-district-2'></span><span id = 'explanation-district-3'></span>
+        <div class="chart-container">
+          <div id="explain-pie">
+            <span id='explanation-charter-1'></span><span id='explanation-charter-2'></span><span id='explanation-charter-3'></span>
+              <span id='highlight-salary-benefits'></span><span id='explanation-district-1'></span>
+              <span id='explanation-district-2'></span><span id='explanation-district-3'></span>
+          </div>
+          <div id="pie"></div>
         </div>
-        <div id = "pie"></div>
-        </br>
-
 
         <p>These large numbers are difficult to understand, so let's help you put them in perspective.</p>
 
@@ -211,34 +223,30 @@
 
 
 <!-- relations between enrollment and funding -->
-    <div class = 'scatterPlot'>
+    <div class='scatterPlotContainer'>
 <!--     <p id="scatterFilter">
     <p class="direction">Pick Schools You Are Interested In:</p>
     </p> -->
+        <div id="scatter-plot-explainer">
+          <div class="scatter-steps">
+              <ul id="steps">
+              <li id="step1" class="active-step">1</li><li id="step2">2</li><li id="step3">3</li><li id="step4">4</li>
+              </ul>
+          </div>
+          <div class="text-blocks-scatter">
+              <p id="explanation1" class="active-explanation">YOUR SCHOOL</br></br>This graph plots the change in enrollment against the change in budget from 2015 to 2016. Did you find your school?</p>
 
-    <!-- section in testing -->
-            <div class = "scatter-steps">
-                <ul id = "steps">
-                <li id="step1" class="active-step">1</li><li id="step2">2</li><li id="step3">3</li><li id="step4">4</li>
-                </ul>
-            </div>
-            <!-- end of test -->
+              <p id="explanation2">FUNDING MODEL</br></br>The "Student Based Budgeting" model means that schools having increases in enrollment will also see rises in budgets, whereas schools that lost students will be less funded. The ascendent straight area in the center of the graph shows this pattern.</p>
+              <p id="explanation3">LESS STUDENTS IN REGULAR SCHOOLS...</br></br>On average, each CPS school will have 6 students less in 2016 in comparison to 2015. This trend is represented at the bottom part of the graph. Regular schools are losing more students than charters.</p>
 
-        <!-- section in testing -->
-        <div class="text-blocks-scatter">
-            <p id="explanation1" class="active-explanation">YOUR SCHOOL</br></br>This graph plots the change in enrollment against the change in budget from 2015 to 2016. Did you find your school?</p>
-
-            <p id="explanation2">FUNDING MODEL</br></br>The "Student Based Budgeting" model means that schools having increases in enrollment will also see rises in budgets, whereas schools that lost students will be less funded. The ascendent straight line in the center of the graph shows this pattern.</p>
-            <p id="explanation3">LESS STUDENTS IN REGULAR SCHOOLS...</br></br>On average, each CPS school will have 6 students less in 2016 in comparison to 2015. This trend is represented at the bottom part of the graph. Regular schools are losing more students than charters.</p>
-
-            <p id="explanation4">AND MORE MONEY FOR CHARTERS</br></br>Each school will have $ 93,337 less in its budget than last year on average. The concentration of dots at the left part of the graph represents this trend. Proportionally, more charter schools received more money, as showed by the purple dots. </p>
+              <p id="explanation4">AND MORE MONEY FOR CHARTERS</br></br>Each school will have $ 93,337 less in its budget than last year on average. The concentration of dots at the left part of the graph represents this trend. Proportionally, more charter schools received more money, as showed by the purple dots. </p>
+          </div>
         </div>
-        <!-- end of testing -->
-    <p id='scatterPlot'></p>  
+    <div id='scatterPlot'></div>
     </div>
 
     <div class='capital-budget'>
-        <p><a href="http://cps.edu/fy16budget/Pages/capital.aspx">A capital budget </a>was revealed in May - the entire budget was unveiled late August. Capital expenditures are devoted to infrastructure such as the construction of playgrounds and the installation of air conditioning and internet. 
+        <p>A <a href="http://cps.edu/fy16budget/Pages/capital.aspx">capital budget</a> was revealed in May - the entire budget was unveiled late August. Capital expenditures are devoted to infrastructure such as the construction of playgrounds and the installation of air conditioning and internet. 
         </p>
         
         <p>Suffering from unprecedented financial difficulties, CPS significantly scaled back capital expenditures in its five-year-plan (2016-2020) of proposed capital budgets. This year, the capital budget is estimated to be $160.2 million, roughly 30 percent of last year’s $510 million. Until 2019, the capital budgets are expected to decrease consistently to $83.7 million and only in 2020 will it increase again to $91.3 million.
@@ -248,16 +256,17 @@
     <!-- Collage -->
 
     <div class="protest-image">
-        <div class="michelle">
+        <img class="michelle" src="http://i1341.photobucket.com/albums/o744/patygomeslima/Michelle_cortada_zpssodhw9yv.gif">
+        <div class="collage">
+          <img class="overview" src="http://i1341.photobucket.com/albums/o744/patygomeslima/overview_3_zpsbvwmusfv.gif">
+          <div class="collage-inner">
+            <img class="teens" src="http://i1341.photobucket.com/albums/o744/patygomeslima/Teens_menor5_zpsygylycmi.gif" border="0" alt=" photo Teens_menor5_zpsygylycmi.gif"/>
+            <div class="quote">
+                <p>"Can you imagine a principal trying to open up a school building and trying to staff it with the highest quality people when you do not even know which positions you have available?"
+                </p>
+              </div>
+          </div>
         </div>
-        <div class="overview">
-        </div>
-        <div class="quote">
-            <p>"Can you imagine a principal trying to open up a school building and trying to staff it with the highest quality people when you do not even know which positions you have available?"
-            </p>
-        </div>
-        <div class="teens">
-        </div>    
     </div>
 
     <div class='CTU'>
@@ -326,12 +335,12 @@
         <p>What we are seeing now, though, is a totally different picture: instead of surplus, debt. "CPS is projecting a cash shortfall of about $1.9 billion at the end of 2016 fiscal year and absent material cost deferral or third party intervention CPS is projected to run out of cash as early as this summer," warned the Ernst & Young report. This situation made <a href"http://www.chicagotribune.com/news/local/politics/ct-cps-downgrade-met-20150513-story.html">Moody's Investors Service downgrade CPS </a>bonds to junk status. 
         </p>
 
-        <p>Besides swamping the future for cash, CPS has enjoyed in the past years what is called "pension holiday", a legislation to delay payment by allowing less contribution —— or none at all in a year —— to teachers’ pension fund. By not being obliged to adjust and increase teachers’ salaries each year, CPS agrees to contribute a higher amount of money to teachers’ pension fund compared to most of other school systems in the U.S. However, the pension holiday is over this year and CPS is demanded to pay the snowballed contribution. 
+        <p>Besides swamping the future for cash, CPS has enjoyed in the past years what is called "pension holiday", a legislation to delay payment by allowing less contribution — or none at all in a year — to teachers’ pension fund. By not being obliged to adjust and increase teachers’ salaries each year, CPS agrees to contribute a higher amount of money to teachers’ pension fund compared to most of other school systems in the U.S. However, the pension holiday is over this year and CPS is demanded to pay the snowballed contribution. 
         </p>
 
         <blockquote>The city doesn't have a lot more tax capacity. The state doesn't have a lot of tax capacity. In the past they could deal with the crisis by putting a bandage on it.</blockquote>
 
-        <p>Among all the strategies to delay and reduce payment, the one with the most lasting impact on taxpayers was redefining the beginning of a fiscal year. In order to <a href="http://cps.edu/fy15budget/Pages/overview.aspx">inject about $654 millions </a>into the 2015 budget, CPS added two months to the past fiscal year to include July and August tax collections, expanding the 2015 fiscal year to 14 months. From this year on, the tax collection will start on September instead of June. “We recognize that this helps us balance the FY15 budget but does not generate any additional revenue. It is simply a timing change that will help us provide a bridge for the FY15 budget until the time when we achieve financial stability through pension reform,” said CPS when announcing its plan to address the budget gap.
+        <p>Among all the strategies to delay and reduce payment, the one with the most lasting impact on taxpayers was redefining the beginning of a fiscal year. In order to <a href="http://cps.edu/fy15budget/Pages/overview.aspx">inject about $654 millions</a> into the 2015 budget, CPS added two months to the past fiscal year to include July and August tax collections, expanding the 2015 fiscal year to 14 months. From this year on, the tax collection will start on September instead of June. “We recognize that this helps us balance the FY15 budget but does not generate any additional revenue. It is simply a timing change that will help us provide a bridge for the FY15 budget until the time when we achieve financial stability through pension reform,” said CPS when announcing its plan to address the budget gap.
         </p>
 
         <p><a href="http://www.ipr.northwestern.edu/faculty-experts/fellows/figlio.html">David Figlio</a>, director for the Institute of Police Research at Northwestern University and a former CPS parent, described the situation as "kicking a can down the road". Year after year, CPS cobbled together ways of covering expenses, but it is not possible anymore.
@@ -360,18 +369,25 @@
         <a name="section6" class="section"><h3>CONTACT</h3></a>
         <p> This project was developed during the summer of 2015 by Lingwei Cheng and Patrícia Gomes at Knight Lab, Northwestern University, under the mentorship of Joe Germuska and Heather Billings. Our main goal was to develop a data-driven dynamic article that delivers personalized content. One reader, one specific article.This project shows that it is possible to explore existing tools to deliver news in a more innovative fashion. As an experimental project, however, it suffers from many drawbacks. Please do not hesitate in sending us <a href="http://goo.gl/forms/tcBhw2ovIg">feedback and comments</a>.</p>
 
-        <p id="person"> <b>Lingwei Cheng</b> is a graduate student at the University of Chicago Harris School of Public Policy, where she studies Computational Analysis and Public Policy. Lingwei is from Chongqing, China, the largest city in the world. Yet, she is interested in rural development and wishes one day to use technology and innovation to improve the livelihood of the disadvantaged and to empower citizens. During the summer, she’s part of an NGO of amateur hikers that hikes to collect information on children in remote mountainous regions in China. She has interned as a reporter for several city publications and as a web editor at Xinhua News Agency. She’s currently the web editor for Chicago Policy Reviews. You can contact her through <a href = "https://www.linkedin.com/in/lingweicheng">Linkedin</a> or <a href="mailto:lingweic@uchicago.edu">lingweic@uchicago.edu</a></p>
+        <div id="lingwei">
+        <img class="photobio" src="http://i1341.photobucket.com/albums/o744/patygomeslima/Lingwei150_zps7hdk2xgd.gif" border="0" alt="lingwei150 photo Lingwei150_zps7hdk2xgd.gif"/></a>
+        </div>
+        
+        <p id="person"> <b>Lingwei Cheng</b> is a graduate student at the University of Chicago Harris School of Public Policy, where she studies Computational Analysis and Public Policy. Lingwei is from Chongqing, China, the largest city in the world. Yet, she is interested in rural development and wishes one day to use technology and innovation to improve the livelihood of the disadvantaged and to empower citizens. During the summer, she’s part of an NGO of amateur hikers that hikes to collect information on children in remote mountainous regions in China. She has interned as a reporter for several city publications and as a web editor at Xinhua News Agency. She’s currently the web editor for Chicago Policy Reviews. You can contact her through <a href = "https://www.linkedin.com/in/lingweicheng">Linkedin</a> or <a href="mailto:lingweic@uchicago.edu">lingweic@uchicago.edu.</a></p>
 
-        <p id="person"> <b>Patrícia Gomes</b> is an education reporter who graduated last June in Media Strategy and Leadership at Medill School of Journalism, Northwestern University. She has been working as a professional journalist since 2008 in media outlets such as Agence France Presse, Folha de S.Paulo and Porvir. Paty is from Brazil and is passionate about innovation, education, and journalism itself. You can contact her at <a href = "https://twitter.com/Paty_Gomes_"> @Paty_Gomes_</a> or <a href="mailto:patriciagomes@u.northwestern.edu">patriciagomes@u.northwestern.edu.</a></p>
+        <div id="paty">
+        <img class="photobio" src="http://i1341.photobucket.com/albums/o744/patygomeslima/Paty150_zpsgxb8knqj.gif" border="0" alt="paty150 photo Paty150_zpsgxb8knqj.gif"/></a>
+        </div>
+        
+        <p id="person"> <b>Patrícia Gomes</b> is an education reporter who graduated last June in Media Strategy and Leadership at Medill School of Journalism, Northwestern University. She has been working as a professional journalist since 2008 in media outlets such as Agence France Presse, Folha de S.Paulo and Porvir. Paty is from Brazil and is passionate about innovation, education, and journalism itself. You can contact her through <a href = "https://www.linkedin.com/profile/view?id=AAIAAAO5g-YB2YOMDwdHrGHL2rTxCCHC2awFhyA&trk=nav_responsive_tab_profile_pic"> Linkedin</a> or <a href="mailto:patriciagomes@u.northwestern.edu">patriciagomes@u.northwestern.edu.</a></p>
 </div>
     
-  
+
+<!--     sharing options -->
     <script type='text/javascript' src='js/game.js'></script>
     <script type='text/javascript' src='js/lineChart.js'></script>
     <script type='text/javascript' src='js/pieChart.js'></script>
     <script type='text/javascript' src='js/scatterPlot.js'></script>
-
-
 </body>
 </html>
 

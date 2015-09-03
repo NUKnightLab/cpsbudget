@@ -40,7 +40,16 @@ h3 {
 }
 
 
-.budget-2015, .budget-2015-analysis, .game, .budget-2016, .capital-budget, .CTU, .history, .methodology, .contact-info {
+.budget-2015,
+.budget-2015-analysis,
+.budget-2016,
+.capital-budget,
+.contact-info,
+.CTU,
+.game,
+.history,
+.methodology,
+.scatterPlotContainer {
     min-width: 200px;
     width: 60%;
     margin: 40px auto;
@@ -57,34 +66,55 @@ h3 {
   font-weight:bolder;
 }
 
-  blockquote {
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    text-transform: uppercase;
-    font-style: italic;
-    color: #808080;
-    font-size: 25px;
-    width: 60%;
-    margin-left: -200px;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    padding-left: 1em;
-    display: block;
-    float: left;
-    line-height: 1.5em;
-  }
+blockquote {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  text-transform: uppercase;
+  font-style: italic;
+  color: #808080;
+  font-size: 25px;
+  width: 60%;
+  margin-left: -200px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  display: block;
+  float: left;
+  line-height: 1.5em;
+}
+
+.share-wrapper {
+  width:10px;
+  margin:5px;
+}
+
+ul.share-buttons{
+  list-style: none;
+  margin-top:100px;
+  width:10px;
+  float:left;
+}
 
 .bio {
   text-transform: uppercase;
   font-weight: bolder;
 }
 
-a:link {
-    color: #191919;;
+p a:link{
+    text-decoration: none;
+    color:#191919;
+    box-shadow: inset 0 0px 0 white, inset 0 -1px 0 #191919;
 }
-
-a:visited {
+.capital-budget p a:link{
+  text-decoration: none;
+    color:#191919;
+    box-shadow: inset 0 0px 0 white, inset 0 -2px 0 #191919;
+}
+p a:visited{
     color: #191919;
+}
+.capital-budget p a:visited{
+  color:#191919;
 }
 
 
@@ -96,7 +126,7 @@ a:visited {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  position: relative;
+  overflow: hidden;
 }
 
 #credit {
@@ -122,12 +152,12 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 #intro {
   width: 33%;
   min-width: 200px;
-  margin-left: 60%;
+  float: right;
   padding-top: 10px;
   padding-bottom: 50px;
-  background-color: rgba(0,0,0,0.4);
   padding-right: 50px;
   padding-left: 50px;
+  background-color: rgba(0,0,0,0.4);
 }
 
 
@@ -145,11 +175,14 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 #helpuser {
     font-size: 15px;
     text-transform: uppercase;
+    font-style: italic;
     position: relative;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     text-align: left;
     color: #ffffff;
+    width: 80%;
+    opacity: 0.5;
 }
 
 
@@ -168,13 +201,20 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 300;
+  color: #ffffff;
   padding: 5px;
   list-style: none;
   background-color: #c1272d;
   border-color: rgba(0, 0, 0, 0.2);
   border-style: solid;
-  color: #ffffff;
   width: 400px;
+}
+
+::-webkit-input-placeholder {
+color: #ffffff;
+font-size: 15px;
+padding-top: 4px;
+opacity: 0.7;
 }
 
 .fixed-height {
@@ -288,6 +328,14 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
    font-weight:bold;
 }
 
+/*sharing buttons*/
+
+.share-buttons li img{
+  width:40px;
+  height:40px;
+}
+
+
 
 /*   <--- budget 2015 --->   */
 
@@ -296,8 +344,8 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
     font-family: 'Roboto Slab', serif;
     padding: 4px;
     color: #333333;
-    margin-left: 400px;
     display: inline-block;
+    width: 65%;
 }
 .arc:hover{
   opacity:0.8;
@@ -400,7 +448,7 @@ ul.priority{
   content: '';
   position: absolute;
   top: 25%;
-  border-top: 12px solid #999;
+  border-top: 12px solid #C1272D;
   border-left: 12px solid transparent;
   border-right: 12px solid transparent;
 }
@@ -421,7 +469,7 @@ ul.priority{
   top: 0;
   border-left: 12px solid transparent;
   border-right: 12px solid transparent;
-  border-bottom: 12px solid #999;
+  border-bottom: 12px solid #C1272D;
   }
 
 .caret-up:after {
@@ -447,7 +495,6 @@ ul.priority{
   padding-top: 5px;
   width: 85%; 
 }
-
 
 /*the button*/
 
@@ -491,22 +538,27 @@ ul.priority{
 }
 
 /*graph styles*/
-.lineGraph {
+.LineGraph {
   width: 80%;
-  height: 40%;
-  margin: auto;
+  margin: 0;
+  padding-left: 42px;
 }
 
-.scatterPlot {
-margin: 20px 200px;
+.LineGraph,
+#scatterPlot {
+  width: 80%;
+}
 
+.chart-container {
+    width: 80%;
+    margin: auto;
 }
 
 #explain-pie {
-  width:300px;
+  width:30%;
   display:inline-block;
-  position: absolute;
-  padding-top: 20px;
+  padding-top: 0px;
+  padding-right: 21px;
 }
 
 #explanation-district-2, #explanation-charter-2{
@@ -608,54 +660,30 @@ border-radius: 6px;
       stroke-width: 0;
 }
 
-.scatter-steps ul {
-  cursor: pointer;
-  cursor: hand;
+#scatter-plot-explainer {
   position: absolute;
-  border-style: solid;
-  border-color: #564332;
-  border-width:1px;
-  padding-left: 0;
-  padding-right: 0;
-  border-color:black;
-  padding: 7px 1px;
-  width: 100px;
-  height: 15px;
-  left: 200px;
+}
+.scatter-steps ul {
+    position: relative;
   z-index: 998;
+  cursor: pointer;
+  border: solid 1px #564332;
+  display: inline-block;
   -webkit-box-shadow: 1px 5px 5px 3px rgba(99,86,99,0.45);
   -moz-box-shadow: 1px 5px 5px 3px rgba(99,86,99,0.45);
   box-shadow: 1px 5px 5px 3px rgba(99,86,99,0.45);
   background-color: #f2f2f2;
-  margin-top: 0px;
-  border-radius: 3px;
+  border-radius: 3px 3px 0 0;
+  padding-left: 0;
+  margin: 0;
 }
-
-.text-blocks-scatter {
-  border-radius: 3px;
-  border-style: solid;
-  border-width: 1px;
-  -webkit-box-shadow: 1px 5px 5px 3px rgba(99,86,99,0.45);
-  -moz-box-shadow: 1px 5px 5px 3px rgba(99,86,99,0.45);
-  box-shadow: 1px 5px 5px 3px rgba(99,86,99,0.45);
-  border-color: #7E6652;
-  width: 300px;
-  height: 175px;
-  position: absolute;
-  z-index: 998;
-  left: 200px;
-  margin-top:30px;
-  background-color:#f2f2f2;
-}
-
 .scatter-steps ul li{
-    font: 8px sans-serif;
+    font-family: sans-serif;
     font-weight:lighter;
-    display: inline;
+    display: inline-block;
     list-style-type: none;
     font-size: 15px;
-    border-left: solid;
-    border-color: #564332;
+    border-left: 1px solid #564332;
     padding: 7px 8px;
     border-width: 1px;
     text-align:center;
@@ -664,6 +692,21 @@ border-radius: 6px;
 .scatter-steps ul #step1 {
   border-left:none;
 }
+
+.text-blocks-scatter {
+  border-radius: 0 0 3px 3px;
+  border: solid 1px #564332;
+  -webkit-box-shadow: 1px 5px 5px 3px rgba(99,86,99,0.45);
+  -moz-box-shadow: 1px 5px 5px 3px rgba(99,86,99,0.45);
+  box-shadow: 1px 5px 5px 3px rgba(99,86,99,0.45);
+  width: 300px;
+  height: 175px;
+  position: relative;
+  z-index: 998;
+  background-color:#f2f2f2;
+  margin-top: -1px;
+}
+
 
 .text-blocks-scatter p {
   position:absolute;
@@ -699,78 +742,65 @@ border-radius: 6px;
 
 /*Photo Collage*/
 
+.share-wrapper { display: none; }
+
 .protest-image{
-  position: relative;
-  width: 1200px;
-  height: 757px;
+  max-height: 757px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1209px;
+  min-width: 250px;
   margin: auto;
-  background-color: #C1272D;
+  background: #f2f2f2;
 }
 
 .michelle {
-  background: url("http://i1341.photobucket.com/albums/o744/patygomeslima/Michelle_cortada_zpssodhw9yv.gif");
-  background-repeat: no-repeat;
-
-  width: 600px;
-  height: 757px;
-  position: absolute;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  top: 0; 
-  left: 0;
-  border-right: 10px solid #f2f2f2;
-  z-index: 998;
-  }
-
-
-.overview {
-  background: url("http://i1341.photobucket.com/albums/o744/patygomeslima/overview_3_zpsbvwmusfv.gif");
-  background-repeat: no-repeat;
-  width: 600px;
-  height: 411px;
-  position: absolute;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  top: 0; 
-  right: 0;
-  border-bottom: 10px solid #f2f2f2;
-  z-index: 997;
+  width: 50%;
+  margin: 0 1% 0 0;
+  min-width: 400px;
+  max-width: 600px;
+  float: left;
 }
 
+.overview {
+  width: 49%;
+  margin: 0;
+  min-width: 400px;
+  max-width: 600px;
+  float: right;
+}
 
 .quote {
+    width: 22%;
+    margin: 1% 1% 0 0;
+    padding: 2% 1%;
+    float: right;
+    background-color: #C1272D;
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     font-weight: 300;
     font-size: 20px;
     font-style: italic;
     color: #ffffff;
-    padding-top: 420px;
-    display: block;
     line-height: 1.6em;
-    bottom: 0;
-    margin-left: 630px;
-    margin-right: 330px;  
 }
 
 .teens {
-  background: url("http://i1341.photobucket.com/albums/o744/patygomeslima/Teens_cortada_zps8owasx1w.gif");
-  background-repeat: no-repeat;
-  width: 300px;
-  height: 346px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  border-left: 10px solid #f2f2f2;
+  width: 24%;
+  margin: 1% 0 0 0;
+  min-width: 200px;
+  max-width: 300px;
+  float: right;
+}
 
+#lingwei, #paty {
+  float:left;
+  padding-right: 20px
+}
+
+.photobio {
+  border-radius: 6px;
+  padding-top: 15px;
 }
 
 /*Media Queries*/
@@ -792,12 +822,60 @@ border-radius: 6px;
   #main-nav ul li::after { 
     content: "";
   }
+   .chart-container {
+      width: 100%;
+      font-size: 15px;
+   }
+
+   #explain-pie {
+      margin-top: 0px;
+      padding-top: 60px;
+      display: block;
+      float: left;
+   }
+
+   #highlight-salary-benefits{
+      font-size: 20px;
+   }
+
 }
 
 @media screen and (max-width: 945px){
    #main-nav ul{
     display: none;
-   } 
+   }
+    .protest-image { position: relative; }
+    .teens { display: none; }
+    .quote {
+        width: 47%;
+        margin: 1% 0 0 0;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
 
+@media screen and (max-width: 830px) {
+    .overview {
+        display: none;
+    }
+    .michelle {
+        width: 100%;
+        margin: auto;
+    }
+}
 
+@media screen and (max-width: 560px) {
+    .quote {
+        display: none;
+    }
+}
 
+@media screen and (max-width: 1000px){
+
+blockquote {
+    width: 90%;
+    margin: 10px auto 20px;
+    font-size: 18px;
+}
+}

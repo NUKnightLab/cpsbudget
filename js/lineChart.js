@@ -1,7 +1,11 @@
 function draw_line_chart(school_short,school_name,similars,dataset){
   console.log("LineCHART!")
+var containerWidth = document.getElementsByClassName('LineGraph')[0].offsetWidth;
 var margin = {top: 20, right: 100, bottom: 30, left: 80},
-    width = 900 - margin.left - margin.right,
+    width = 900 >= containerWidth ? (
+      containerWidth
+     ) : (
+      900 - margin.left - margin.right ),
     height = 500 - margin.top - margin.bottom;
 
 
@@ -119,14 +123,6 @@ d3.csv("./js/data/yearlyBudget.csv", function(error, data) {
 
 //draw default lines
   sch.append("path")
-      // .attr("class", function(d){
-      //   if ( (d["Unit Name"] == school_name)||(similars.indexOf(d["Unit Name"])!= -1) ) {
-      //     return "front_line";
-      //     }
-      //   else {
-      //     return "line";
-      //   }
-      //})
       .attr("class", "line")
       .attr("d", function(d) { return line(d.values); })
       .style("stroke", function(d) {

@@ -1,8 +1,11 @@
 function draw_scatter_plot(school,similars,dataset){
-
+  var containerWidth = document.getElementById('scatterPlot').offsetWidth;
   var margin = {top: 20, right: 20, bottom: 30, left: 80},
-        width = 900 - margin.left - margin.right,
-        height = 700- margin.top - margin.bottom;
+      width = 900 >= containerWidth ? (
+        containerWidth
+       ) : (
+      900 - margin.left - margin.right ),
+      height = 700 - margin.top - margin.bottom;
 
   var XScale = d3.scale.linear().domain([-60,40]).range([0,width]);
       xAxis = d3.svg.axis().scale(XScale).orient("bottom");
@@ -38,7 +41,7 @@ function draw_scatter_plot(school,similars,dataset){
   //draw Y-axis
   svg.append("g")
       .attr("class", "y_axis")
-      .attr("transform", "translate(" + (width - 320) + "," + "0" + ")")
+      .attr("transform", "translate(" + (width - (width/3+width/15)) + "," + "0" + ")")
       .call(yAxis)
     .append("text")
       .attr("class", "label")
@@ -89,26 +92,26 @@ function draw_scatter_plot(school,similars,dataset){
      .text("Charter School");
      //school types
   svg.append('circle')
-    .attr("cx",120)
+    .attr("cx",width/5)
     .attr("cy",height-355)
     .attr("r", 4)
     .style("fill", "#FFAE15");
   svg.append('circle')
-    .attr("cx",120)
+    .attr("cx",width/5)
     .attr("cy",height-325)
     .attr("r",4)
     .style("fill", "#7243A2");
     //your and similar schools
   svg.append('circle')
     .attr("r", 10)
-    .attr("cx", 120)
+    .attr("cx", width/5)
     .attr("cy", height-415)
     .style("stroke-width","2px")
     .style("fill", "none")
     .style("stroke", "#c1272d");
   svg.append('circle')
     .attr("r", 7)
-    .attr("cx", 120)
+    .attr("cx", width/5)
     .attr("cy", height-385)
     .style("stroke-width","2px")
     .style("fill","none")
@@ -256,9 +259,9 @@ function draw_scatter_plot(school,similars,dataset){
    svg.append('rect')
     .attr("class","graph-exp")
     .attr("id","graph-step4")
-    .attr("x",180)
+    .attr("x",width/5)
     .attr("y",10)
-    .attr("width",300)
+    .attr("width",width/2.5)
     .attr("height",600)
     .style("color","gray");
 

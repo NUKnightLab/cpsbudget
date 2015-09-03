@@ -2,7 +2,7 @@
 function draw_pie_chart(school_name, total) {
   var budget15 = total;
 
-  var width = 480,
+  var width = 400,
       height = 250,
       radius = Math.min(width, height) / 2;
 
