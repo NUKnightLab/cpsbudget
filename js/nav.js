@@ -25,3 +25,27 @@ $(function(){
         }
     });
 });
+
+
+// // for the sharing buttons 
+// $(function() {
+//     var $sidebar   = $(".share-buttons"), 
+//         $window    = $(window),
+//         offset     = $sidebar.offset(),
+//         topPadding = 300;
+
+//     $window.scroll(function() {
+//         if ($window.scrollTop() > offset.top) {
+//             $sidebar.stop().animate({
+//                 marginTop: $window.scrollTop() - offset.top + topPadding,
+//                 duration:0
+//             });
+//         } else {
+//             $sidebar.stop().animate({
+//                 marginTop: 0,
+//                 duration:0
+//             });
+//         }
+//     });
+    
+// });

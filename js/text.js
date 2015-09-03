@@ -49,24 +49,25 @@ function init_autocomplete() {
       ac_data.push(school_data[i]['Unit Name'])
       name_to_unit[school_data[i]['Unit Name']] = school_data[i]['Unit']
     };
-
     $(".search #user_school").autocomplete({
-      minLength: 1,
+      minLength: 4,
+      delay: 400,
+      focus: function () {
+        $(".search #user_school").autocomplete("option", "delay", 0);
+      },
       source: ac_data,
       select: function( event, ui ) {
-        var school_name = event.target.value;
+        school_name = ui.item.value;
+        window.location.hash = school_name;
         console.log("select handler user selected " + school_name + " aka " + name_to_unit[school_name]);
           for (i = 0; i < dataset.length; i++){
             if (ac_data[i] == school_name) {
-              console.log("SCROLL");
               $('html, body').animate({scrollTop: $('#main-nav').offset().top}, 1000);
             }
           }
         select_school(school_name);
       }
     }).autocomplete("widget").addClass("fixed-height");
-    // //default school
-    select_school('Stephen F Gale Community Academy');
 }
 
 function update_text(school){
