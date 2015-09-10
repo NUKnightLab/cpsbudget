@@ -742,7 +742,7 @@ border-radius: 6px;
 
 /*Photo Collage*/
 
-.share-wrapper {display: none}
+.share-wrapper { display: none; }
 
 .protest-image{
   max-height: 757px;
