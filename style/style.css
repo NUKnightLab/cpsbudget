@@ -66,6 +66,11 @@ h3 {
   font-weight:bolder;
 }
 
+.graphTitle {
+  font-weight: bold;
+  text-align: center;
+}
+
 blockquote {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
@@ -545,7 +550,8 @@ ul.priority{
 }
 
 .LineGraph,
-#scatterPlot {
+#scatterPlot,
+{
   width: 80%;
 }
 
