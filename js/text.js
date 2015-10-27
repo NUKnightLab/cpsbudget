@@ -182,7 +182,7 @@ function consistency_comparison_result(school){
     return 'in line with';
   }
   else {
-    return 'the oppoosed of';
+    return 'the oppoosite of';
   }
 }
 
